@@ -1,13 +1,12 @@
 const express = require('express');
-const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
-require('dotenv/config');
-
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const authRouter = require('./routes/auth');
+const festivalRouter = require('./routes/festival');
+const gameRouter = require('./routes/game');
+const reservationRouter = require('./routes/reservation');
 
 const app = express();
 
@@ -15,10 +14,18 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use(authRouter);
+app.use('/festival', festivalRouter);
+app.use('/game', gameRouter);
+app.use('/reservation', reservationRouter);
+
+app.use((rep, res) => {
+    res.status(404).json({error: "route does not exist"})
+});
+
+
+require('dotenv/config');
 
 mongoose.connect(
     process.env.DB_CONNECTION,
