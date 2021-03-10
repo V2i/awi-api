@@ -24,7 +24,6 @@ app.use((rep, res) => {
     res.status(404).json({error: "route does not exist"})
 });
 
-
 require('dotenv/config');
 
 mongoose.connect(

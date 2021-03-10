@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const contactSchema = mongoose.Schema({
-    //test
+
     contactId: {
         type: mongoose.ObjectId,
         required: true,

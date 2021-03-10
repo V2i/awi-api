@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Space = require('models/Space');
+const Space = require('Space');
 
 const festivalSchema = mongoose.Schema({
 
@@ -19,7 +19,6 @@ const festivalSchema = mongoose.Schema({
     },
 
     festivalSpace: {
-        //il y en a 3
         type: [Space],
         required: false,
     }
