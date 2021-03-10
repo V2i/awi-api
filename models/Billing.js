@@ -14,8 +14,18 @@ const billingSchema = mongoose.Schema({
     },
 
     billingAmount: {
-        type : Number,
-        required : true,
+        type: Number,
+        required: true,
+    },
+
+    billingSendDate: {
+        type: Date,
+        required: false,
+    },
+
+    billingPaidDate: {
+        type: Date,
+        required: false,
     },
 
 });

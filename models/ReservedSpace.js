@@ -1,29 +1,29 @@
 const mongoose = require('mongoose');
 
-const locationSchema = mongoose.Schema({
+const reservedSpaceSchema = mongoose.Schema({
 
-    locationId: {
+    reservedSpaceId: {
         type: mongoose.ObjectId,
         required: true,
     },
 
-    locationZone: {
+    reservedSpace: {
         type: mongoose.ObjectId,
-        ref: "Zone",
+        ref: "Space",
         required: true,
     },
 
-    locationNbTable: {
+    reservedSpaceNbTable: {
         type: Number,
         required: true,
     },
 
-    locationSurface: {
+    reservedSpaceSurface: {
         type: Number,
         required: false,
-    }
+    },
 
 });
 
-module.exports = mongoose.model('Location', locationSchema);
+module.exports = mongoose.model('ReservedSpace', reservedSpaceSchema);
 

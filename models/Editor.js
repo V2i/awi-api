@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Contact = require('Contact');
 
 const editorSchema = mongoose.Schema({
 
@@ -13,15 +12,6 @@ const editorSchema = mongoose.Schema({
         required: true,
     },
 
-    editorAddress: {
-        type: String,
-        required: false,
-    },
-
-    editorContact: {
-        type: [Contact],
-        required: true,
-    }
 });
 
 module.exports = mongoose.model('Editor', editorSchema);

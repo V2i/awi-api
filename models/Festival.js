@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Zone = require('Zone');
+const Space = require('models/Space');
 
 const festivalSchema = mongoose.Schema({
 
@@ -10,11 +10,17 @@ const festivalSchema = mongoose.Schema({
 
     festivalName: {
         type: String,
+        required: false,
+    },
+
+    festivalDate: {
+        type: Date,
         required: true,
     },
 
-    festivalZone: {
-        type: [Zone],
+    festivalSpace: {
+        //il y en a 3
+        type: [Space],
         required: false,
     }
 

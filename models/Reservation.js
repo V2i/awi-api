@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Location = require('Location');
-const Game = require('Game');
+const ReservedSpace = require('ReservedSpace');
 const Billing = require('Billing');
+const Tracking = require('Tracking');
 
 const reservationSchema = mongoose.Schema({
 
@@ -16,8 +16,8 @@ const reservationSchema = mongoose.Schema({
         required: true,
     },
 
-    reservationLocation: {
-        type: [Location],
+    reservationReservedSpace: {
+        type: [ReservedSpace],
         required: true,
     },
 
@@ -27,26 +27,38 @@ const reservationSchema = mongoose.Schema({
         required: true,
     },
 
-    reservationNote: {
+    reservationTracking: {
+        type: Tracking,
+        required: true,
+    },
+
+    reservationComment: {
         type: String,
         required: false,
     },
 
-    reservationWorkflow: {
-        //enum
-        type: String,
-        required: true,
-    },
-
     reservationGame: {
-        type: [Game],
+        type: [mongoose.ObjectId],
+        ref: 'ReservedGame',
         required: false,
     },
 
     reservationBilling: {
         type: Billing,
         required: true,
-    }
+    },
+
+    exhibitorVolunteerNeeded: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+
+    exhibitorIsMoving: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
 
 });
 

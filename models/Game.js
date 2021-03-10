@@ -18,6 +18,17 @@ const gameSchema = mongoose.Schema({
         default: 0,
     },
 
+    gameDuration: {
+        type: Number,
+        required: false,
+    },
+
+    isPrototype: {
+        type: Boolean,
+        required: false,
+        default: false,
+    },
+
     gameMinimumPlayers: {
         type: Number,
         required: true,
@@ -31,7 +42,7 @@ const gameSchema = mongoose.Schema({
     },
 
     gameType: {
-        //enum
+        //enum ??????
         type: String,
         required: true,
     },

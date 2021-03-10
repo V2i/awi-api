@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Editor = require('Editor');
+const Contact = require('Contact');
 
+// model about people show casing game to festival
 const exhibitorSchema = mongoose.Schema({
 
     exhibitorId: {
@@ -13,36 +15,15 @@ const exhibitorSchema = mongoose.Schema({
         required: false,
     },
 
-    exhibitorLastname: {
+    exhibitorName: {
         type: String,
         required: true,
     },
 
-    exhibitorFirstname: {
-        type: String,
+    exhibitorContact: {
+        type: [Contact],
         required: true,
     },
-
-    exhibitorPhone: {
-        type: Number,
-        required: false,
-    },
-
-    exhibitorMail: {
-        type: String,
-        required: false,
-    },
-
-    exhibitorNbVolunteer: {
-        type: Number,
-        required: true,
-        default: 0,
-    },
-
-    exhibitorIsMoving: {
-        type: Boolean,
-        required: true,
-    }
 
 });
 

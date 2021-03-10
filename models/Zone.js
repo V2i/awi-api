@@ -12,21 +12,6 @@ const zoneSchema = mongoose.Schema({
         required: true,
     },
 
-    zonePrice: {
-        type: Number,
-        required: true,
-    },
-
-    zoneNbTable: {
-        type: Number,
-        required: true
-    },
-
-    zoneSurface: {
-        type: Number,
-        required: true,
-    },
-
 });
 
 module.exports = mongoose.model('Zone', zoneSchema);
