@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-const Editor = require('Editor');
-const Contact = require('Contact');
+
+const Editor = require('../models/Editor').schema;
+const Contact = require('../models/Contact').schema;
 
 // model about people show casing game to festival
 const exhibitorSchema = new mongoose.Schema({
@@ -17,7 +18,7 @@ const exhibitorSchema = new mongoose.Schema({
 
     exhibitorContact: {
         type: [Contact],
-        required: true,
+        required: false,
     },
 
 });

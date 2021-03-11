@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-const Game = require('Game');
-const Zone = require('Zone');
+
+const Game = require('../models/Game').schema;
+const Zone = require('../models/Zone').schema;
 
 // Model about a game reservation from an exhibitor
 const reservedGameSchema = new mongoose.Schema({

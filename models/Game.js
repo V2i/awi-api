@@ -36,8 +36,8 @@ const gameSchema = new mongoose.Schema({
         default: 1,
     },
 
+    //enum ??????
     gameType: {
-        //enum ??????
         type: String,
         required: true,
     },

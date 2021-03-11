@@ -7,6 +7,8 @@ const authRouter = require('./routes/auth');
 const festivalRouter = require('./routes/festival');
 const gameRouter = require('./routes/game');
 const reservationRouter = require('./routes/reservation');
+const editorRouter = require('./routes/editor');
+const exhibitorRouter = require('./routes/exhibitor');
 
 const app = express();
 
@@ -19,6 +21,8 @@ app.use(authRouter);
 app.use('/festival', festivalRouter);
 app.use('/game', gameRouter);
 app.use('/reservation', reservationRouter);
+app.use('/editor', editorRouter);
+app.use('/exhibitor', exhibitorRouter);
 
 app.use((rep, res) => {
     res.status(404).json({error: "route does not exist"})

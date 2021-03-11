@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-const ReservedSpace = require('ReservedSpace');
-const Billing = require('Billing');
-const Tracking = require('Tracking');
-const ReservedGame = require('ReservedGame');
+
+const ReservedSpace = require('../models/ReservedSpace').schema;
+const Billing = require('../models/Billing').schema;
+const Tracking = require('../models/Tracking').schema;
+const ReservedGame = require('../models/ReservedGame').schema;
 
 const reservationSchema = new mongoose.Schema({
 
