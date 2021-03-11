@@ -3,12 +3,7 @@ const Editor = require('Editor');
 const Contact = require('Contact');
 
 // model about people show casing game to festival
-const exhibitorSchema = mongoose.Schema({
-
-    _exhibitorId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const exhibitorSchema = new mongoose.Schema({
 
     exhibitorEditor: {
         type: Editor,

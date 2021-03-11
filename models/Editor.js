@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const editorSchema = mongoose.Schema({
-
-    _editorId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const editorSchema = new mongoose.Schema({
 
     editorName: {
         type: String,

@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const zoneSchema = mongoose.Schema({
-
-    _zoneId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const zoneSchema = new mongoose.Schema({
 
     zoneName: {
         type: String,

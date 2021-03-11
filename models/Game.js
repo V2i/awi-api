@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const gameSchema = mongoose.Schema({
-
-    _gameId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const gameSchema = new mongoose.Schema({
 
     gameName: {
         type: String,

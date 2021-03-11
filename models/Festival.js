@@ -1,12 +1,7 @@
 const mongoose = require('mongoose');
-const Space = require('Space');
+const Space = require('./Space').modelName;
 
-const festivalSchema = mongoose.Schema({
-
-    _festivalId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const festivalSchema = new mongoose.Schema({
 
     festivalName: {
         type: String,

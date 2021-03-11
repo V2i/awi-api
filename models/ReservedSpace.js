@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const reservedSpaceSchema = mongoose.Schema({
-
-    _reservedSpaceId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const reservedSpaceSchema = new mongoose.Schema({
 
     reservedSpace: {
         type: mongoose.ObjectId,

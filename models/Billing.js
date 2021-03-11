@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const billingSchema = mongoose.Schema({
-
-    _billingId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const billingSchema = new mongoose.Schema({
 
     billingStatus: {
         //enum

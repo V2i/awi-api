@@ -3,12 +3,7 @@ const Game = require('Game');
 const Zone = require('Zone');
 
 // Model about a game reservation from an exhibitor
-const reservedGameSchema = mongoose.Schema({
-
-    _reservedGameId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const reservedGameSchema = new mongoose.Schema({
 
     reservedGame: {
         type: Game,

@@ -4,12 +4,7 @@ const Billing = require('Billing');
 const Tracking = require('Tracking');
 const ReservedGame = require('ReservedGame');
 
-const reservationSchema = mongoose.Schema({
-
-    _reservationId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const reservationSchema = new mongoose.Schema({
 
     reservationExhibitor: {
         type: mongoose.ObjectId,

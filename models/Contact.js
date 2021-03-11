@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const contactSchema = mongoose.Schema({
-
-    _contactId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const contactSchema = new mongoose.Schema({
 
     contactLastname: {
         type: String,

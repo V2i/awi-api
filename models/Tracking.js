@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 
-const trackingSchema = mongoose.Schema({
-
-    _trackingId: {
-        type: mongoose.ObjectId,
-        required: true,
-    },
+const trackingSchema = new mongoose.Schema({
 
     trackingWorkflow: {
         //enum
