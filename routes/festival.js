@@ -16,6 +16,18 @@ router.get('/list', async (req, res) => {
 
 });
 
+/* GET festival by id */
+router.get('/:id', async (req, res) => {
+
+    try {
+        const festival = await Festival.findById(req.params.id);
+        return res.status(200).json(festival);
+    } catch (err) {
+        return res.status(500).json({message: err});
+    }
+
+});
+
 /* POST new festival */
 router.post('/', async (req, res) => {
 
