@@ -46,6 +46,11 @@ const gameSchema = new mongoose.Schema({
         type: mongoose.ObjectId,
         ref: 'Editor',
         required: true,
+    },
+
+    gameNotice: {
+        type: String,
+        required: false,
     }
 });
 

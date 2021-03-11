@@ -18,6 +18,11 @@ const reservedSpaceSchema = new mongoose.Schema({
         required: false,
     },
 
+    reservedSpaceDiscount: {
+        type: Number,
+        required: false,
+    },
+
 });
 
 module.exports = mongoose.model('ReservedSpace', reservedSpaceSchema);
