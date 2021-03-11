@@ -3,7 +3,7 @@ const Space = require('Space');
 
 const festivalSchema = mongoose.Schema({
 
-    festivalId: {
+    _festivalId: {
         type: mongoose.ObjectId,
         required: true,
     },

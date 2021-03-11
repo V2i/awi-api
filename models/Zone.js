@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const zoneSchema = mongoose.Schema({
 
-    zoneId: {
+    _zoneId: {
         type: mongoose.ObjectId,
         required: true,
     },

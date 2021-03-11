@@ -2,10 +2,11 @@ const mongoose = require('mongoose');
 const ReservedSpace = require('ReservedSpace');
 const Billing = require('Billing');
 const Tracking = require('Tracking');
+const ReservedGame = require('ReservedGame');
 
 const reservationSchema = mongoose.Schema({
 
-    reservationId: {
+    _reservationId: {
         type: mongoose.ObjectId,
         required: true,
     },
@@ -38,8 +39,7 @@ const reservationSchema = mongoose.Schema({
     },
 
     reservationGame: {
-        type: [mongoose.ObjectId],
-        ref: 'ReservedGame',
+        type: [ReservedGame],
         required: false,
     },
 

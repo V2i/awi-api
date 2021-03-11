@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const gameSchema = mongoose.Schema({
 
-    gameId: {
+    _gameId: {
         type: mongoose.ObjectId,
         required: true,
     },

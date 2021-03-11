@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const editorSchema = mongoose.Schema({
 
-    editorId: {
+    _editorId: {
         type: mongoose.ObjectId,
         required: true,
     },

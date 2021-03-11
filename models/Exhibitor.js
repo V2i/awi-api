@@ -5,7 +5,7 @@ const Contact = require('Contact');
 // model about people show casing game to festival
 const exhibitorSchema = mongoose.Schema({
 
-    exhibitorId: {
+    _exhibitorId: {
         type: mongoose.ObjectId,
         required: true,
     },

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const trackingSchema = mongoose.Schema({
 
-    trackingId: {
+    _trackingId: {
         type: mongoose.ObjectId,
         required: true,
     },

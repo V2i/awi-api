@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const spaceSchema = mongoose.Schema({
 
-    spaceId: {
+    _spaceId: {
         type: mongoose.ObjectId,
         required: true,
     },
