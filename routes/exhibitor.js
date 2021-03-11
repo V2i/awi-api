@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const Editor = require('../models/Editor');
 const Reservation = require('../models/Reservation');
 const Exhibitor = require('../models/Exhibitor');
 
@@ -20,11 +19,12 @@ router.get('/list', async (req, res) => {
 /* GET exhibitors listing by festival id*/
 router.get('/list/festival/:id', async (req, res) => {
 
-    //TODO: the request
+    //TODO: a tester
 
     try {
-
-
+        const test = await Reservation.find({reservationFestival: req.params.id},{reservationExhibitor: 1});
+        console.log(test);
+        return res.status(200).json(test);
     } catch (err) {
         return res.status(500).json({message: err});
     }
@@ -83,7 +83,7 @@ router.delete('/:id', async (req, res) => {
         if(!exhibitor){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
-        await Editor.remove(exhibitor);
+        await Exhibitor.deleteOne(exhibitor);
         return res.status(200).json(exhibitor);
     } catch (err) {
         return res.status(500).json({message: err});
