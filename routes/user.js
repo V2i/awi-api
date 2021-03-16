@@ -3,6 +3,8 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 
 const User = require('../models/User');
+const admin = require('../middlewares/admin');
+const user = require('../middlewares/user');
 
 /* GET users listing */
 router.get('/list', async (req, res) => {
@@ -30,7 +32,7 @@ router.get('/:id', async (req, res) => {
 
 
 /* POST new user. Only admin */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     //checking if user already exist
     try {

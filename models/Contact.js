@@ -28,7 +28,6 @@ const contactSchema = new mongoose.Schema({
     },
 
     contactFunction: {
-        //enum type may be
         type: String,
         required: true,
     },
