@@ -4,11 +4,13 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 
 const authRouter = require('./routes/auth');
+const userRouter = require('./routes/user');
 const festivalRouter = require('./routes/festival');
 const gameRouter = require('./routes/game');
 const reservationRouter = require('./routes/reservation');
 const editorRouter = require('./routes/editor');
 const exhibitorRouter = require('./routes/exhibitor');
+const spaceFestival = require('./routes/space');
 
 const app = express();
 
@@ -18,11 +20,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(authRouter);
+app.use('/user', userRouter);
 app.use('/festival', festivalRouter);
 app.use('/game', gameRouter);
 app.use('/reservation', reservationRouter);
 app.use('/editor', editorRouter);
 app.use('/exhibitor', exhibitorRouter);
+app.use('/space', spaceFestival);
 
 app.use((rep, res) => {
     res.status(404).json({error: "route does not exist"})

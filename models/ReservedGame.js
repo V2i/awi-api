@@ -1,18 +1,17 @@
 const mongoose = require('mongoose');
 
-const Game = require('../models/Game').schema;
-const Zone = require('../models/Zone').schema;
-
 // Model about a game reservation from an exhibitor
 const reservedGameSchema = new mongoose.Schema({
 
     reservedGame: {
-        type: Game,
+        type: mongoose.ObjectId,
+        ref: 'Game',
         required: true,
     },
 
     reservedGameZone: {
-        type: Zone,
+        type: mongoose.ObjectId,
+        ref: 'Zone',
         required: false,
     },
 

@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-const Space = require('../models/Space').schema;
-
 const festivalSchema = new mongoose.Schema({
 
     festivalName: {
@@ -15,9 +13,16 @@ const festivalSchema = new mongoose.Schema({
     },
 
     festivalSpace: {
-        type: [Space],
+        type: [mongoose.ObjectId],
+        ref: 'Space',
         required: false,
-    }
+    },
+
+    isCurrent: {
+        type: Boolean,
+        required: true,
+        default: false
+    },
 
 });
 

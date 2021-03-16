@@ -56,38 +56,38 @@ router.post('/', async (req, res) => {
     });
 
     try {
-        const savedExhibitor = await exhibitor.save();
-        return res.status(200).json(savedExhibitor);
+        const savedReservation = await reservation.save();
+        return res.status(200).json(savedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
     }
 
 });
 
-/* PATCH  exhibitor by id */
+/* PATCH  reservation by id */
 router.patch('/:id', async (req, res) => {
 
     try{
-        await Exhibitor.updateOne({_id: req.params.id}, {$set: {...req.body}})
-        const updatedExhibitor = await Exhibitor.findById(req.params.id);
-        return res.status(200).json(updatedExhibitor);
+        await Reservation.updateOne({_id: req.params.id}, {$set: {...req.body}})
+        const updatedReservation = await Reservation.findById(req.params.id);
+        return res.status(200).json(updatedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
     }
 
 });
 
-/* DELETE exhibitor by id */
+/* DELETE reservation by id */
 router.delete('/:id', async (req, res) => {
 
     try{
-        let exhibitor = await Exhibitor.findById(req.params.id);
+        let reservation = await Reservation.findById(req.params.id);
 
-        if(!exhibitor){
+        if(!reservation){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
-        await Exhibitor.deleteOne(exhibitor);
-        return res.status(200).json(exhibitor);
+        await Reservation.deleteOne(reservation);
+        return res.status(200).json(reservation);
     } catch (err) {
         return res.status(500).json({message: err});
     }
