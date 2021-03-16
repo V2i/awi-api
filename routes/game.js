@@ -1,4 +1,5 @@
 const express = require('express');
+const Reservation = require('../models/Reservation');
 const router = express.Router();
 
 const Game = require('../models/Game');
@@ -12,7 +13,7 @@ router.get('/list', async (req, res) => {
     } catch (err) {
         return res.status(500).json({message: err});
     }
-});
+
 
 /* POST new game */
 router.post('/', async (req, res) => {
