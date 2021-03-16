@@ -13,8 +13,7 @@ const festivalSchema = new mongoose.Schema({
     },
 
     festivalSpace: {
-        type: [mongoose.ObjectId],
-        ref: 'Space',
+        type: [{type: mongoose.ObjectId, ref: 'Space'}],
         required: false,
     },
 
