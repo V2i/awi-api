@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
 
-const ReservedSpace = require('../models/ReservedSpace').schema;
-const Billing = require('../models/Billing').schema;
-const Tracking = require('../models/Tracking').schema;
-const ReservedGame = require('../models/ReservedGame').schema;
-
 const reservationSchema = new mongoose.Schema({
 
     reservationExhibitor: {
@@ -14,7 +9,8 @@ const reservationSchema = new mongoose.Schema({
     },
 
     reservationReservedSpace: {
-        type: [ReservedSpace],
+        type: [mongoose.ObjectId],
+        ref: 'ReservedSpace',
         required: true,
     },
 
@@ -25,7 +21,8 @@ const reservationSchema = new mongoose.Schema({
     },
 
     reservationTracking: {
-        type: Tracking,
+        type: mongoose.ObjectId,
+        ref: 'Tracking',
         required: true,
     },
 
@@ -35,12 +32,14 @@ const reservationSchema = new mongoose.Schema({
     },
 
     reservationGame: {
-        type: [ReservedGame],
+        type: [mongoose.ObjectId],
+        ref: 'ReservedGame',
         required: false,
     },
 
     reservationBilling: {
-        type: Billing,
+        type: mongoose.ObjectId,
+        ref: 'Billing',
         required: true,
     },
 
