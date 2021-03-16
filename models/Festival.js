@@ -20,7 +20,8 @@ const festivalSchema = new mongoose.Schema({
 
     isCurrent: {
         type: Boolean,
-        required: false,
+        required: true,
+        default: false
     },
 
 });
