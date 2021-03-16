@@ -4,12 +4,12 @@ const contactSchema = new mongoose.Schema({
 
     contactLastname: {
         type: String,
-        required: true,
+        required: [ true, "Le nom de famille du contact est obligatoire" ]
     },
 
     contactFirstname: {
         type: String,
-        required: true,
+        required: [ true, "Le prénom du contact est obligatoire" ]
     },
 
     contactPhone: {
@@ -24,12 +24,12 @@ const contactSchema = new mongoose.Schema({
 
     contactMail: {
         type: String,
-        required: true,
+        required: [ true, "L'adresse mail du contact est obligatoire" ]
     },
 
     contactFunction: {
         type: String,
-        required: true,
+        required: [ true, "La fonction du contact est obligatoire" ]
     },
 
     contactMain: {

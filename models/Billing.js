@@ -3,14 +3,16 @@ const mongoose = require('mongoose');
 const billingSchema = new mongoose.Schema({
 
     billingStatus: {
-        //enum
         type: String,
         required: true,
+        enum:['Faite', 'Pas faite', 'Réglée'],
+        default: 'Pas faite'     
     },
 
     billingAmount: {
         type: Number,
         required: true,
+        default: 0
     },
 
     billingSendDate: {

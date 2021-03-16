@@ -4,7 +4,7 @@ const zoneSchema = new mongoose.Schema({
 
     zoneName: {
         type: String,
-        required: true,
+        required: [ true, "Le nom de la zone est obligatoire" ],
     },
 
 });

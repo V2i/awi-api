@@ -4,7 +4,7 @@ const gameTypeSchema = new mongoose.Schema({
 
     gameTypeName: {
         type: String,
-        required: true,
+        required: [ true, "Le type de jeu est obligatoire" ],
     }
 
 });

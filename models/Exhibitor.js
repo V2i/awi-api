@@ -11,12 +11,11 @@ const exhibitorSchema = new mongoose.Schema({
 
     exhibitorName: {
         type: String,
-        required: true,
+        required: [ true, "Le nom de l'exposant est obligatoire" ]
     },
 
     exhibitorContact: {
-        type: [mongoose.ObjectId],
-        ref: 'Contact',
+        type: [{type: mongoose.ObjectId, ref: 'Contact'}],
         required: false,
     },
 

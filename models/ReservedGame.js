@@ -41,7 +41,8 @@ const reservedGameSchema = new mongoose.Schema({
 
     reservedGameQuantity: {
         type: Number,
-        required: true,
+        required: [ true, "La quantité de jeu réservée est obligatoire" ],
+        min: 0
     },
 
 });

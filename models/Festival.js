@@ -4,17 +4,16 @@ const festivalSchema = new mongoose.Schema({
 
     festivalName: {
         type: String,
-        required: false,
+        required: [ true, "Le nom du festival est obligatoire" ]
     },
 
     festivalDate: {
         type: Date,
-        required: true,
+        required: [ true, "La date du festival est obligatoire" ]
     },
 
     festivalSpace: {
-        type: [mongoose.ObjectId],
-        ref: 'Space',
+        type: [{ type: mongoose.ObjectId, ref: 'Space'}],
         required: false,
     },
 

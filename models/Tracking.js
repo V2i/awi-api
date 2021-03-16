@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const trackingSchema = new mongoose.Schema({
 
     trackingWorkflow: {
-        //enum
         type: String,
         required: true,
+        enum: ['Pas encore contacté', 'Contacté', 'Discussion en cours', 'Réservation confirmée', 'Jeux demandés', 'Jeux confirmés'],
     },
 
     trackingContact1: {

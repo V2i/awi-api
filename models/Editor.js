@@ -4,7 +4,7 @@ const editorSchema = new mongoose.Schema({
 
     editorName: {
         type: String,
-        required: true,
+        required: [ true, "Le nom de l'éditeur est obligatoire" ]
     },
 
 });

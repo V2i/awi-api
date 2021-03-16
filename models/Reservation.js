@@ -9,8 +9,7 @@ const reservationSchema = new mongoose.Schema({
     },
 
     reservationReservedSpace: {
-        type: [mongoose.ObjectId],
-        ref: 'ReservedSpace',
+        type: [{ type: mongoose.ObjectId, ref: 'ReservedSpace'}],
         required: true,
     },
 
@@ -32,8 +31,7 @@ const reservationSchema = new mongoose.Schema({
     },
 
     reservationGame: {
-        type: [mongoose.ObjectId],
-        ref: 'ReservedGame',
+        type: [{type : mongoose.ObjectId, ref: 'ReservedGame'} ],
         required: false,
     },
 

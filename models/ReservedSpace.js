@@ -10,17 +10,20 @@ const reservedSpaceSchema = new mongoose.Schema({
 
     reservedSpaceNbTable: {
         type: Number,
-        required: true,
+        required: false,
+        min:0
     },
 
     reservedSpaceSurface: {
         type: Number,
         required: false,
+        min:0
     },
 
     reservedSpaceDiscount: {
         type: Number,
         required: false,
+        min:0
     },
 
 });
