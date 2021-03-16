@@ -8,7 +8,7 @@ const Festival = require('../models/Festival');
 router.get('/list', async (req, res) => {
 
     try {
-        const festivals = await Festival.find();
+        const festivals = await Festival.find().populate('festivalSpace');
         return res.status(200).json(festivals);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -28,6 +28,18 @@ router.get('/:id', async (req, res) => {
 
 });
 
+/* GET current festival */
+router.get('/current', async (req, res) => {
+
+    try {
+        const festival = await Festival.find({isCurrent: true});
+        return res.status(200).json(festival);
+    } catch (err) {
+        return res.status(500).json({message: err});
+    }
+
+});
+
 /* POST new festival */
 router.post('/', async (req, res) => {
 
@@ -35,6 +47,7 @@ router.post('/', async (req, res) => {
         festivalName: req.body.festivalName,
         festivalDate: moment(req.body.festivalDate),
         festivalSpace: req.body.festivalSpace,
+        isCurrent: req.body.isCurrent
     });
 
     try {
@@ -73,8 +86,6 @@ router.delete('/:id', async (req, res) => {
     } catch (err) {
         return res.status(500).json({message: err});
     }
-
-
 
 });
 
