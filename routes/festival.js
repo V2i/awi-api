@@ -8,7 +8,8 @@ const Festival = require('../models/Festival');
 router.get('/list', async (req, res) => {
 
     try {
-        const festivals = await Festival.find().populate('festivalSpace');
+        const festivals = await Festival.find()
+            .populate('festivalSpace');
         return res.status(200).json(festivals);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -20,7 +21,8 @@ router.get('/list', async (req, res) => {
 router.get('/:id', async (req, res) => {
 
     try {
-        const festival = await Festival.findById(req.params.id);
+        const festival = await Festival.findById(req.params.id)
+            .populate('festivalSpace');
         return res.status(200).json(festival);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -32,7 +34,8 @@ router.get('/:id', async (req, res) => {
 router.get('/current', async (req, res) => {
 
     try {
-        const festival = await Festival.find({isCurrent: true});
+        const festival = await Festival.find({isCurrent: true})
+            .populate('festivalSpace');
         return res.status(200).json(festival);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -64,7 +67,8 @@ router.patch('/:id', async (req, res) => {
 
     try{
         await Festival.updateOne({_id: req.params.id}, {$set: {...req.body}})
-        const updatedFestival = await Festival.findById(req.params.id);
+        const updatedFestival = await Festival.findById(req.params.id)
+            .populate('festivalSpace');
         return res.status(200).json(updatedFestival);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -76,7 +80,8 @@ router.patch('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
 
     try{
-        let festival = await Festival.findById(req.params.id);
+        let festival = await Festival.findById(req.params.id)
+            .populate('festivalSpace');
 
         if(!festival){
             return res.status(403).json({message: "Object Not Found"}).end()

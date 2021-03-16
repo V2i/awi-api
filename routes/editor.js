@@ -3,8 +3,6 @@ const router = express.Router();
 
 const Editor = require('../models/Editor');
 const Reservation = require('../models/Reservation');
-const Game = require('../models/Game');
-const ReservedSpace = require('../models/ReservedSpace');
 
 /* GET editors listing */
 router.get('/list', async (req, res) => {

@@ -8,7 +8,9 @@ const Exhibitor = require('../models/Exhibitor');
 router.get('/list', async (req, res) => {
 
     try {
-        const exhibitors = await Exhibitor.find();
+        const exhibitors = await Exhibitor.find()
+            .populate('exhibitorEditor')
+            .populate('exhibitorContact');
         return res.status(200).json(exhibitors);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -22,9 +24,10 @@ router.get('/list/festival/:id', async (req, res) => {
     //TODO: a tester
 
     try {
-        const test = await Reservation.find({reservationFestival: req.params.id},{reservationExhibitor: 1});
-        console.log(test);
-        return res.status(200).json(test);
+        const exhibitors = await Reservation.find({reservationFestival: req.params.id},{reservationExhibitor: 1})
+            .populate('reservationExhibitor');
+        console.log(exhibitors);
+        return res.status(200).json(exhibitors);
     } catch (err) {
         return res.status(500).json({message: err});
     }
@@ -35,7 +38,9 @@ router.get('/list/festival/:id', async (req, res) => {
 router.get('/:id', async (req, res) => {
 
     try {
-        const exhibitor = await Exhibitor.findById(req.params.id);
+        const exhibitor = await Exhibitor.findById(req.params.id)
+            .populate('exhibitorEditor')
+            .populate('exhibitorContact');
         return res.status(200).json(exhibitor);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -66,7 +71,9 @@ router.patch('/:id', async (req, res) => {
 
     try{
         await Exhibitor.updateOne({_id: req.params.id}, {$set: {...req.body}})
-        const updatedExhibitor = await Exhibitor.findById(req.params.id);
+        const updatedExhibitor = await Exhibitor.findById(req.params.id)
+            .populate('exhibitorEditor')
+            .populate('exhibitorContact');
         return res.status(200).json(updatedExhibitor);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -78,7 +85,9 @@ router.patch('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
 
     try{
-        let exhibitor = await Exhibitor.findById(req.params.id);
+        let exhibitor = await Exhibitor.findById(req.params.id)
+            .populate('exhibitorEditor')
+            .populate('exhibitorContact');
 
         if(!exhibitor){
             return res.status(403).json({message: "Object Not Found"}).end()
