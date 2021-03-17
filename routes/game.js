@@ -14,9 +14,11 @@ router.get('/list', async (req, res) => {
         return res.status(500).json({message: err});
     }
 
+});
 
 /* POST new game */
 router.post('/', async (req, res) => {
+
     const { game } = req.body;
     
     const newGame = new Game({
