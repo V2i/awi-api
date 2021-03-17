@@ -86,7 +86,7 @@ router.delete('/:id', async (req, res) => {
         if(!festival){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
-        await Festival.remove(festival);
+        await Festival.deleteOne(festival);
         return res.status(200).json(festival);
     } catch (err) {
         return res.status(500).json({message: err});

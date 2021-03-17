@@ -68,7 +68,7 @@ router.delete('/:id', async (req, res) => {
         if(!space){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
-        await Space.remove(space);
+        await Space.deleteOne(space);
         return res.status(200).json(space);
     } catch (err) {
         return res.status(500).json({message: err});

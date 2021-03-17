@@ -80,7 +80,7 @@ router.delete('/:id', async (req, res) => {
         if(!game){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
-        await Game.remove(game);
+        await Game.deleteOne(game);
         return res.status(200).json(game);
     } catch (err) {
         return res.status(500).json({message: err});

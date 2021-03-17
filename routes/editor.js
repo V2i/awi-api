@@ -87,7 +87,7 @@ router.delete('/:id', async (req, res) => {
         if(!editor){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
-        await Editor.remove(editor);
+        await Editor.deleteOne(editor);
         return res.status(200).json(editor);
     } catch (err) {
         return res.status(500).json({message: err});
