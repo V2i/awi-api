@@ -16,6 +16,8 @@ const contactRouter = require('./routes/contact');
 const spaceRouter = require('./routes/space');
 const reservedGameRouter = require('./routes/reservedGame');
 const zoneRouter =require('./routes/zone');
+const reservedSpaceRouter = require('./routes/reservedSpace');
+const trackingRouter =require('./routes/tracking');
 
 require('dotenv/config'); //todo: delete in prod
 app.use(logger('dev')); //todo: delete in prod
@@ -35,6 +37,8 @@ app.use('/contact', contactRouter);
 app.use('/space', spaceRouter);
 app.use('/reservedGame', reservedGameRouter);
 app.use('/zone', zoneRouter);
+app.use('/reservedSpace', reservedSpaceRouter);
+app.use('/tracking', trackingRouter);
 
 /* Default Route */
 app.use((rep, res) => {
