@@ -10,6 +10,7 @@ const gameRouter = require('./routes/game');
 const reservationRouter = require('./routes/reservation');
 const editorRouter = require('./routes/editor');
 const exhibitorRouter = require('./routes/exhibitor');
+const contactRouter = require('./routes/contact');
 const spaceFestival = require('./routes/space');
 
 const app = express();
@@ -26,6 +27,7 @@ app.use('/game', gameRouter);
 app.use('/reservation', reservationRouter);
 app.use('/editor', editorRouter);
 app.use('/exhibitor', exhibitorRouter);
+app.use('/contact', contactRouter);
 app.use('/space', spaceFestival);
 
 app.use((rep, res) => {

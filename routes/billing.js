@@ -37,9 +37,9 @@ router.get('/exhibitor/:id', async (req, res) => {
     //todo: a tester
 
     try {
-        const billing = await Reservation.find({reservationExhibitor: req.params.id}, {reservationBilling: 1})
+        const billings = await Reservation.find({reservationExhibitor: req.params.id}, {reservationBilling: 1})
             .populate('reservationBilling');
-        return res.status(200).json(billing);
+        return res.status(200).json(billings);
     } catch (err) {
         return res.status(500).json({message: err});
     }
@@ -62,9 +62,9 @@ router.get('/:id', async (req, res) => {
 router.get('/reservation/:id', async (req, res) => {
 
     try {
-        const billing = await Reservation.findById(req.params.id, {reservationBilling: 1})
+        const billings = await Reservation.findById(req.params.id, {reservationBilling: 1})
             .populate('reservationBilling');
-        return res.status(200).json(billing);
+        return res.status(200).json(billings);
     } catch (err) {
         return res.status(500).json({message: err});
     }
