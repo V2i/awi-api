@@ -8,8 +8,8 @@ router.get('/list', async (req, res) => {
 
     try {
         const reservedGames = await ReservedGame.find()
-            .populate('Game')
-            .populate('Zone');
+            .populate('reservedGame')
+            .populate('reservedGameZone');
         return res.status(200).json(reservedGames);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -22,8 +22,8 @@ router.get('/:id', async (req, res) => {
 
     try {
         const reservedGame = await ReservedGame.findById(req.params.id)
-            .populate('Game')
-            .populate('Zone');
+            .populate('reservedGame')
+            .populate('reservedGameZone');
         return res.status(200).json(reservedGame);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -59,8 +59,8 @@ router.patch('/:id', async (req, res) => {
     try{
         await ReservedGame.updateOne({_id: req.params.id}, {$set: {...req.body}})
         const updatedReservedGame = await ReservedGame.findById(req.params.id)
-            .populate('Game')
-            .populate('Zone');
+            .populate('reservedGame')
+            .populate('reservedGameZone');
         return res.status(200).json(updatedReservedGame);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -73,8 +73,8 @@ router.delete('/:id', async (req, res) => {
 
     try{
         let reservedGame = await ReservedGame.findById(req.params.id)
-            .populate('Game')
-            .populate('Zone');
+            .populate('reservedGame')
+            .populate('reservedGameZone');
 
         if(!reservedGame){
             return res.status(403).json({message: "Object Not Found"}).end()
