@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 const trackingSchema = new mongoose.Schema({
 
+    //todo: enum not working
     trackingWorkflow: {
         type: String,
         required: true,
