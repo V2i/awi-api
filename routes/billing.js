@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const moment = require('moment');
 
 const Reservation = require('../models/Reservation');
 const Billing = require('../models/Billing');
@@ -77,8 +78,8 @@ router.post('/', async (req, res) => {
     const billing = new Billing({
         billingStatus: req.body.billingStatus,
         billingAmount: req.body.billingAmount,
-        billingSendDate: req.body.billingSendDate,
-        billingPaidDate: req.body.billingPaidDate
+        billingSendDate: moment(req.body.billingSendDate),
+        billingPaidDate: moment(req.body.billingPaidDate)
     });
 
     try {
