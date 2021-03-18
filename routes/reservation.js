@@ -66,7 +66,7 @@ router.post('/', async (req, res) => {
         reservationFestival: req.body.reservationFestival,
         reservationTracking: req.body.reservationTracking,
         reservationComment: req.body.reservationComment,
-        reservationGame: req.body.reservationGame,
+        reservationReservedGame: req.body.reservationReservedGame,
         reservationBilling: req.body.reservationBilling,
         exhibitorVolunteerNeeded: req.body.exhibitorVolunteerNeeded,
         exhibitorIsMoving: req.body.exhibitorIsMoving,

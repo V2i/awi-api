@@ -30,7 +30,7 @@ const reservationSchema = new mongoose.Schema({
         required: false,
     },
 
-    reservationGame: {
+    reservationReservedGame: {
         type: [{type : mongoose.ObjectId, ref: 'ReservedGame'} ],
         required: false,
     },
