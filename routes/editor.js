@@ -25,14 +25,16 @@ router.get('/list/festival/:id', async (req, res) => {
         await Reservation.find({reservationFestival: req.params.id, 'reservationReservedGame.0': {$ne: null}}, {reservationReservedGame: 1})
             .populate({path: 'reservationReservedGame', populate: { path: 'reservedGame', populate: {path: 'gameEditor'}}}).then(
             reservedGames => {
-                console.log("je suis la");
-                const editors = reservedGames.map(r => r.reservationReservedGame.map(g => g.reservedGame.gameEditor));
-                console.log(editors);
+                const editors = reservedGames
+                    .map(r => r.reservationReservedGame
+                        .map(g => g.reservedGame.gameEditor))
+                    .filter(e => e.length > 0)
+                    .flat();
                 return res.status(200).json(editors);
             },
         err => res.status(500).json({message: err}));
     } catch (err) {
-        return res.status(500).json({message: "lol"});
+        return res.status(500).json({message: err});
     }
 
 });
