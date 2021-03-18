@@ -19,6 +19,7 @@ const reservedGameRouter = require('./routes/reservedGame');
 const zoneRouter = require('./routes/zone');
 const reservedSpaceRouter = require('./routes/reservedSpace');
 const trackingRouter = require('./routes/tracking');
+const billingRouter = require('./routes/billing');
 
 require('dotenv/config'); //todo: delete in prod
 app.use(logger('dev')); //todo: delete in prod
@@ -41,6 +42,7 @@ app.use('/reservedGame', reservedGameRouter);
 app.use('/zone', zoneRouter);
 app.use('/reservedSpace', reservedSpaceRouter);
 app.use('/tracking', trackingRouter);
+app.use('/billing', billingRouter);
 
 /* Default Route */
 app.use((rep, res) => {
