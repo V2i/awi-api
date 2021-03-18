@@ -9,15 +9,16 @@ const authRouter = require('./routes/auth');
 const userRouter = require('./routes/user');
 const festivalRouter = require('./routes/festival');
 const gameRouter = require('./routes/game');
+const gameTypeRouter = require('./routes/gameType');
 const reservationRouter = require('./routes/reservation');
 const editorRouter = require('./routes/editor');
 const exhibitorRouter = require('./routes/exhibitor');
 const contactRouter = require('./routes/contact');
 const spaceRouter = require('./routes/space');
 const reservedGameRouter = require('./routes/reservedGame');
-const zoneRouter =require('./routes/zone');
+const zoneRouter = require('./routes/zone');
 const reservedSpaceRouter = require('./routes/reservedSpace');
-const trackingRouter =require('./routes/tracking');
+const trackingRouter = require('./routes/tracking');
 
 require('dotenv/config'); //todo: delete in prod
 app.use(logger('dev')); //todo: delete in prod
@@ -30,6 +31,7 @@ app.use(authRouter);
 app.use('/user', userRouter);
 app.use('/festival', festivalRouter);
 app.use('/game', gameRouter);
+app.use('/gameType', gameTypeRouter);
 app.use('/reservation', reservationRouter);
 app.use('/editor', editorRouter);
 app.use('/exhibitor', exhibitorRouter);
