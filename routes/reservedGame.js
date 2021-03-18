@@ -45,7 +45,9 @@ router.post('/', async (req, res) => {
     });
 
     try {
-        const savedReservedGame = await reservedGame.save();
+        const savedReservedGame = await reservedGame.save()
+            .populate('reservedGame')
+            .populate('reservedGameZone');
         return res.status(200).json(savedReservedGame);
     } catch (err) {
         return res.status(500).json({message: err});

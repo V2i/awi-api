@@ -54,7 +54,8 @@ router.post('/', async (req, res) => {
     });
 
     try {
-        const savedFestival = await festival.save();
+        const savedFestival = (await festival.save())
+            .populate('festivalSpace');
         return res.status(200).json(savedFestival);
     } catch (err) {
         return res.status(500).json({message: err});
