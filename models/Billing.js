@@ -29,7 +29,7 @@ const billingSchema = new mongoose.Schema({
 
 });
 
-trackingSchema.pre('updateOne', function(next) {
+billingSchema.pre('updateOne', function(next) {
     const docToUpdate = this.getUpdate()['$set'];
     if (docToUpdate.billingStatus){
         if (!billingStatus.includes(docToUpdate.trackingWorkflow)){
