@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const mail = require('../validators/mail');
 
 const userSchema = new mongoose.Schema({
 
@@ -18,6 +19,17 @@ const userSchema = new mongoose.Schema({
     },
 
 });
+
+userSchema.pre('updateOne', function(next) {
+    const docToUpdate = this.getUpdate()['$set'];
+    if (docToUpdate.userMail){
+        if (!mail(docToUpdate.userMail)){
+            throw new Error("mail not valid");
+        }
+    }
+    
+    next();
+  });
 
 module.exports = mongoose.model('User', userSchema);
 

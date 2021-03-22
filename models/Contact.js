@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const mail = require('../validators/mail');
+const tel = require('../validators/telephone');
 
 const contactSchema = new mongoose.Schema({
 
@@ -15,16 +17,28 @@ const contactSchema = new mongoose.Schema({
     contactPhone: {
         type: Number,
         required: false,
+        validate: {
+            validator: tel,
+            message: props => `${props.value} is not a valid phone number!`
+        },
     },
 
     contactMobilePhone: {
         type: Number,
         required: false,
+        validate: {
+            validator: tel,
+            message: props => `${props.value} is not a valid phone number!`
+        },
     },
 
     contactMail: {
         type: String,
-        required: [ true, "L'adresse mail du contact est obligatoire" ]
+        required: [ true, "L'adresse mail du contact est obligatoire" ],
+        validate: {
+            validator: mail,
+            message: props => `${props.value} is not a valid mail!`
+          },
     },
 
     contactFunction: {
@@ -38,5 +52,27 @@ const contactSchema = new mongoose.Schema({
     },
 
 });
+
+contactSchema.pre('updateOne', function(next) {
+    const docToUpdate = this.getUpdate()['$set'];
+    if (docToUpdate.contactMail){
+        if (!mail(docToUpdate.contactMail)){
+            throw new Error("mail not valid");
+        }
+    }
+    if (docToUpdate.contactMobilePhone){
+        if (!tel(docToUpdate.contactMobilePhone)){
+            throw new Error("contactMobilePhone not valid");
+        }
+    }
+
+    if (docToUpdate.contactPhone){
+        if (!tel(docToUpdate.contactPhone)){
+            throw new Error("contactPhone not valid");
+        }
+    }
+    
+    next();
+  });
 
 module.exports = mongoose.model('Contact', contactSchema);

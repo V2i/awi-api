@@ -73,7 +73,7 @@ router.patch('/:id', async (req, res) => {
         const updatedBilling = await Contact.findById(req.params.id);
         return res.status(200).json(updatedBilling);
     } catch (err) {
-        return res.status(500).json({message: err});
+        return res.status(500).json({message: err.message ? err.message : err});
     }
 
 });

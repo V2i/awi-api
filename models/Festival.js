@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const moment = require('moment');
 
 const festivalSchema = new mongoose.Schema({
 
@@ -24,6 +25,16 @@ const festivalSchema = new mongoose.Schema({
     },
 
 });
+
+festivalSchema.pre('updateOne', function(next) {
+    const docToUpdate = this.getUpdate()['$set'];
+    
+    if (docToUpdate.festivalDate){
+        docToUpdate.festivalDate = moment(docToUpdate.festivalDate);
+    }
+    
+    next();
+  });
 
 module.exports = mongoose.model('Festival', festivalSchema);
 
