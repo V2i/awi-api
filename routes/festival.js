@@ -17,11 +17,11 @@ router.get('/list', async (req, res) => {
 
 });
 
-/* GET festival by id */
-router.get('/:id', async (req, res) => {
+/* GET current festival */
+router.get('/current', async (req, res) => {
 
     try {
-        const festival = await Festival.findById(req.params.id)
+        const festival = await Festival.find({isCurrent: true})
             .populate('festivalSpace');
         return res.status(200).json(festival);
     } catch (err) {
@@ -30,11 +30,11 @@ router.get('/:id', async (req, res) => {
 
 });
 
-/* GET current festival */
-router.get('/current', async (req, res) => {
+/* GET festival by id */
+router.get('/:id', async (req, res) => {
 
     try {
-        const festival = await Festival.find({isCurrent: true})
+        const festival = await Festival.findById(req.params.id)
             .populate('festivalSpace');
         return res.status(200).json(festival);
     } catch (err) {
@@ -54,7 +54,8 @@ router.post('/', async (req, res) => {
     });
 
     try {
-        const savedFestival = await festival.save();
+        const savedFestival = (await festival.save())
+            .populate('festivalSpace');
         return res.status(200).json(savedFestival);
     } catch (err) {
         return res.status(500).json({message: err});

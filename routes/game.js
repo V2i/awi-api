@@ -8,7 +8,9 @@ const Game = require('../models/Game');
 router.get('/list', async (req, res) => {
 
     try {
-        const games = await Game.find();
+        const games = await Game.find()
+            .populate('gameType')
+            .populate('gameEditor');
         return res.status(200).json(games);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -34,7 +36,9 @@ router.post('/', async (req, res) => {
     });
     
     try {
-        const savedGame = await newGame.save();
+        const savedGame = await newGame.save()
+            .populate('gameType')
+            .populate('gameEditor');
         return res.status(200).json(savedGame);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -48,6 +52,8 @@ router.get('/:id', async (req, res) => {
     const { id } = req.params;
     try{
         const game = await Game.findById({_id: id})
+            .populate('gameType')
+            .populate('gameEditor');
         if(!game){
             return res.status(403).json({message: "Object Not Found"}).end()
         }
@@ -63,7 +69,9 @@ router.patch('/:id', async (req, res) => {
 
     try{
         await Game.updateOne({_id: req.params.id}, {$set: {...req.body}})
-        const updatedGame = await Game.findById(req.params.id);
+        const updatedGame = await Game.findById(req.params.id)
+            .populate('gameType')
+            .populate('gameEditor');
         return res.status(200).json(updatedGame);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -75,10 +83,12 @@ router.patch('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
 
     try{
-        let game = await Game.findById(req.params.id);
+        let game = await Game.findById(req.params.id)
+            .populate('gameType')
+            .populate('gameEditor');
 
         if(!game){
-            return res.status(403).json({message: "Object Not Found"}).end()
+            return res.status(403).json({message: "Object Not Found"}).end();
         }
         await Game.deleteOne(game);
         return res.status(200).json(game);
@@ -92,6 +102,8 @@ router.get('/list/editor/:id', async (req, res) => {
     const { id } = req.params;
     try{
         const game = await Game.find({gameEditor: id})
+            .populate('gameType')
+            .populate('gameEditor');
         return res.status(200).json(game);
     } catch (err) {
         return res.status(500).json({message: err});

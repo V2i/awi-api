@@ -39,7 +39,7 @@ router.post('/', async (req, res) => {
     });
 
     try {
-        const savedTracking = await tracking.save();
+        const savedTracking = (await tracking.save());
         return res.status(200).json(savedTracking);
     } catch (err) {
         return res.status(500).json({message: err});

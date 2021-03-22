@@ -2,13 +2,18 @@ const express = require('express');
 const router = express.Router();
 
 const Reservation = require('../models/Reservation');
-const Exhibitor = require('../models/Exhibitor');
 
 /* GET reservations listing */
 router.get('/list', async (req, res) => {
 
     try {
-        const reservations = await Reservation.find();
+        const reservations = await Reservation.find()
+            .populate('reservationExhibitor')
+            .populate('reservationReservedSpace')
+            .populate('reservationFestival')
+            .populate('reservationTracking')
+            .populate('reservationGame')
+            .populate('reservationBilling');
         return res.status(200).json(reservations);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -20,7 +25,13 @@ router.get('/list', async (req, res) => {
 router.get('/list/festival/:id', async (req, res) => {
 
     try {
-        const reservations = await Reservation.find({reservationFestival: req.params.id});
+        const reservations = await Reservation.find({reservationFestival: req.params.id})
+            .populate('reservationExhibitor')
+            .populate('reservationReservedSpace')
+            .populate('reservationFestival')
+            .populate('reservationTracking')
+            .populate('reservationGame')
+            .populate('reservationBilling');
         return res.status(200).json(reservations);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -32,7 +43,13 @@ router.get('/list/festival/:id', async (req, res) => {
 router.get('/:id', async (req, res) => {
 
     try {
-        const reservation = await Reservation.findById(req.params.id);
+        const reservation = await Reservation.findById(req.params.id)
+            .populate('reservationExhibitor')
+            .populate('reservationReservedSpace')
+            .populate('reservationFestival')
+            .populate('reservationTracking')
+            .populate('reservationGame')
+            .populate('reservationBilling');
         return res.status(200).json(reservation);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -49,14 +66,20 @@ router.post('/', async (req, res) => {
         reservationFestival: req.body.reservationFestival,
         reservationTracking: req.body.reservationTracking,
         reservationComment: req.body.reservationComment,
-        reservationGame: req.body.reservationGame,
+        reservationReservedGame: req.body.reservationReservedGame,
         reservationBilling: req.body.reservationBilling,
         exhibitorVolunteerNeeded: req.body.exhibitorVolunteerNeeded,
         exhibitorIsMoving: req.body.exhibitorIsMoving,
     });
 
     try {
-        const savedReservation = await reservation.save();
+        const savedReservation = await reservation.save()
+            .populate('reservationExhibitor')
+            .populate('reservationReservedSpace')
+            .populate('reservationFestival')
+            .populate('reservationTracking')
+            .populate('reservationGame')
+            .populate('reservationBilling');
         return res.status(200).json(savedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -69,7 +92,13 @@ router.patch('/:id', async (req, res) => {
 
     try{
         await Reservation.updateOne({_id: req.params.id}, {$set: {...req.body}})
-        const updatedReservation = await Reservation.findById(req.params.id);
+        const updatedReservation = await Reservation.findById(req.params.id)
+            .populate('reservationExhibitor')
+            .populate('reservationReservedSpace')
+            .populate('reservationFestival')
+            .populate('reservationTracking')
+            .populate('reservationGame')
+            .populate('reservationBilling');
         return res.status(200).json(updatedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -81,7 +110,13 @@ router.patch('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
 
     try{
-        let reservation = await Reservation.findById(req.params.id);
+        let reservation = await Reservation.findById(req.params.id)
+            .populate('reservationExhibitor')
+            .populate('reservationReservedSpace')
+            .populate('reservationFestival')
+            .populate('reservationTracking')
+            .populate('reservationGame')
+            .populate('reservationBilling');
 
         if(!reservation){
             return res.status(403).json({message: "Object Not Found"}).end()
