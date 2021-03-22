@@ -21,13 +21,24 @@ router.get('/list', async (req, res) => {
 /* GET exhibitors listing by festival id*/
 router.get('/list/festival/:id', async (req, res) => {
 
-    //TODO: a tester
+    //TODO: a tester avec un exposant sans editeur
 
     try {
-        const exhibitors = await Reservation.find({reservationFestival: req.params.id},{reservationExhibitor: 1})
-            .populate('reservationExhibitor');
-        console.log(exhibitors);
-        return res.status(200).json(exhibitors);
+        await Reservation.find({reservationFestival: req.params.id},{reservationExhibitor: 1})
+            .populate({
+                path: 'reservationExhibitor',
+                populate: {
+                    path: 'exhibitorContact exhibitorEditor'
+                }
+            }).then(
+                reservationExhibitors => {
+                    const exhibitors = reservationExhibitors
+                        .map(e => e.reservationExhibitor)
+                    return res.status(200).json(exhibitors);
+                },
+                err => res.status(500).json({message: err})
+            );
+
     } catch (err) {
         return res.status(500).json({message: err});
     }
