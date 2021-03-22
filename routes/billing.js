@@ -18,7 +18,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET billings listing by festival id */
-router.get('/festival/:id', async (req, res) => {
+router.get('/list/festival/:id', async (req, res) => {
 
     //todo: a tester
 
@@ -33,7 +33,7 @@ router.get('/festival/:id', async (req, res) => {
 });
 
 /* GET billings by exhibitor id */
-router.get('/exhibitor/:id', async (req, res) => {
+router.get('/list/exhibitor/:id', async (req, res) => {
 
     //todo: a tester
 

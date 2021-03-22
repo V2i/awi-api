@@ -19,17 +19,16 @@ router.get('/list', async (req, res) => {
 /* GET editors listing by festival id */
 router.get('/list/festival/:id', async (req, res) => {
 
-    //TODO: filter
-
     try {
         await Reservation.find({reservationFestival: req.params.id, 'reservationReservedGame.0': {$ne: null}}, {reservationReservedGame: 1})
             .populate({path: 'reservationReservedGame', populate: { path: 'reservedGame', populate: {path: 'gameEditor'}}}).then(
             reservedGames => {
-                const editors = reservedGames
+                let editors = reservedGames
                     .map(r => r.reservationReservedGame
                         .map(g => g.reservedGame.gameEditor))
                     .filter(e => e.length > 0)
                     .flat();
+                editors = editors.filter((e, pos) => editors.indexOf(e) === pos)
                 return res.status(200).json(editors);
             },
         err => res.status(500).json({message: err}));

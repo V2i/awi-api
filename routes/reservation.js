@@ -12,7 +12,7 @@ router.get('/list', async (req, res) => {
             .populate('reservationReservedSpace')
             .populate('reservationFestival')
             .populate('reservationTracking')
-            .populate('reservationGame')
+            .populate('reservationReservedGame')
             .populate('reservationBilling');
         return res.status(200).json(reservations);
     } catch (err) {
@@ -26,12 +26,18 @@ router.get('/list/festival/:id', async (req, res) => {
 
     try {
         const reservations = await Reservation.find({reservationFestival: req.params.id})
-            .populate('reservationExhibitor')
-            .populate('reservationReservedSpace')
-            .populate('reservationFestival')
-            .populate('reservationTracking')
-            .populate('reservationGame')
-            .populate('reservationBilling');
+            .populate({
+                path: 'reservationExhibitor reservationReservedSpace reservationTracking reservationReservedGame reservationBilling',
+                populate: {
+                    path: 'exhibitorEditor exhibitorContact reservedGame reservedSpace reservedGameZone',
+                }
+            })
+            // .populate('reservationExhibitor')
+            // .populate('reservationReservedSpace')
+            // .populate('reservationFestival')
+            // .populate('reservationTracking')
+            // .populate('reservationReservedGame')
+            // .populate('reservationBilling');
         return res.status(200).json(reservations);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -48,7 +54,7 @@ router.get('/:id', async (req, res) => {
             .populate('reservationReservedSpace')
             .populate('reservationFestival')
             .populate('reservationTracking')
-            .populate('reservationGame')
+            .populate('reservationReservedGame')
             .populate('reservationBilling');
         return res.status(200).json(reservation);
     } catch (err) {
@@ -78,7 +84,7 @@ router.post('/', async (req, res) => {
             .populate('reservationReservedSpace')
             .populate('reservationFestival')
             .populate('reservationTracking')
-            .populate('reservationGame')
+            .populate('reservationReservedGame')
             .populate('reservationBilling');
         return res.status(200).json(savedReservation);
     } catch (err) {
@@ -97,7 +103,7 @@ router.patch('/:id', async (req, res) => {
             .populate('reservationReservedSpace')
             .populate('reservationFestival')
             .populate('reservationTracking')
-            .populate('reservationGame')
+            .populate('reservationReservedGame')
             .populate('reservationBilling');
         return res.status(200).json(updatedReservation);
     } catch (err) {
@@ -115,7 +121,7 @@ router.delete('/:id', async (req, res) => {
             .populate('reservationReservedSpace')
             .populate('reservationFestival')
             .populate('reservationTracking')
-            .populate('reservationGame')
+            .populate('reservationReservedGame')
             .populate('reservationBilling');
 
         if(!reservation){

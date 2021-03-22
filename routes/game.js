@@ -114,16 +114,18 @@ router.get('/list/editor/:id', async (req, res) => {
 /* GET games listing by festival id */
 router.get('/list/festival/:id', async (req, res) => {
 
-    //TODO: a tester
-
     try {
-        await Reservation.find({reservationFestival: req.params.id}, (err, reservations) => {
-            console.log(reservations);
-            reservations.map(r => r.reservationGame)
-                .flat()
-            return res.status(200).json(reservations);
-        });
-
+        const reservedGames = await Reservation.find({reservationFestival: req.params.id, 'reservationReservedGame.0': {$ne: null}}, {reservationReservedGame: 1})
+            .populate({
+                path: 'reservationReservedGame',
+                populate: {
+                    path: 'reservedGameZone reservedGame',
+                    populate: {
+                        path: 'gameEditor gameType',
+                    }
+                }
+            });
+        return res.status(200).json(reservedGames);
     } catch (err) {
         return res.status(500).json({message: err});
     }
