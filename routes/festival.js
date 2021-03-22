@@ -72,7 +72,7 @@ router.patch('/:id', async (req, res) => {
             .populate('festivalSpace');
         return res.status(200).json(updatedFestival);
     } catch (err) {
-        return res.status(500).json({message: err});
+        return res.status(500).json({message: err.message ? err.message : err});
     }
 
 });
