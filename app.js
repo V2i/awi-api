@@ -21,8 +21,8 @@ const reservedSpaceRouter = require('./routes/reservedSpace');
 const trackingRouter = require('./routes/tracking');
 const billingRouter = require('./routes/billing');
 
-require('dotenv/config'); //todo: delete in prod
-app.use(logger('dev')); //todo: delete in prod
+//require('dotenv/config'); //todo: delete in prod
+//app.use(logger('dev')); //todo: delete in prod
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
