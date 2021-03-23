@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const Zone = require('../models/Zone');
+const Reservation = require('../models/Reservation');
 
 /* GET zones listing */
 router.get('/list', async (req, res) => {
@@ -67,6 +68,54 @@ router.delete('/:id', async (req, res) => {
         }
         await Zone.deleteOne(zone);
         return res.status(200).json(zone);
+    } catch (err) {
+        return res.status(500).json({message: err});
+    }
+
+});
+
+/* GET zones and games listing by festival id */
+router.get('/list/festival/:id', async (req, res) => {
+    console.log("id = " + req.params.id);
+    try {
+        await Reservation.find({reservationFestival: req.params.id, 'reservationReservedGame.0': {$ne: null}}, {reservationReservedGame: 1})
+            .populate({
+                path: 'reservationReservedGame',
+                populate: {
+                    path: 'reservedGame reservedGameZone',
+                    populate: {
+                        path : 'gameEditor gameType'
+                    }
+                }
+            }).then(
+            reservedGames => {
+                console.log("ok populate");
+                const zonesMapped = [];
+                reservedGames
+                    .forEach(r => r.reservationReservedGame
+                        .forEach(g => {
+                            if (!zonesMapped.find(game => game.zone._id == g.reservedGameZone._id)){
+                                zonesMapped.push({
+                                    zone : g.reservedGameZone,
+                                    gameList : [g.reservedGame]
+                                })
+                                
+                            }
+                            if (zonesMapped.find(game => game.zone._id == g.reservedGameZone._id) && !zonesMapped.some(z => z.gameList.find(game => game._id == g.reservedGame._id))){
+                                zonesMapped = zonesMapped.map(zone => {
+                                    if (zone.zone._id == g.reservedGameZone._id){
+                                        zone.gameList = [...zone.gameList, g.reservedGame]
+                                    }
+                                    return zone
+                                })
+                            }
+                            console.log("ok")
+                        })
+                    )
+                
+                return res.status(200).json(zonesMapped);
+            },
+        err => res.status(500).json({message: err}));
     } catch (err) {
         return res.status(500).json({message: err});
     }
