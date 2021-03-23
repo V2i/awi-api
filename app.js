@@ -1,7 +1,8 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors')
+//const logger = require('morgan');
 const app = express();
 
 /* Routes */
@@ -21,11 +22,12 @@ const reservedSpaceRouter = require('./routes/reservedSpace');
 const trackingRouter = require('./routes/tracking');
 const billingRouter = require('./routes/billing');
 
-//require('dotenv/config'); //todo: delete in prod
-//app.use(logger('dev')); //todo: delete in prod
+//require('dotenv/config');
+//app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors());
 
 /* Middlewares */
 app.use(authRouter);
