@@ -111,6 +111,27 @@ router.get('/list/editor/:id', async (req, res) => {
 
 });
 
+//A TESTER
+/* GET filter games by editor and by festival */
+    router.get('/list/editor/:id/festival/:idf', async (req, res) => {
+        const { id, idf } = req.params;
+        try{
+            const array = []
+            const game = await Reservation.find({reservationFestival: idf})
+                .populate('reservationExhibitor')
+    .populate('reservationReservedGame')
+                .forEach( reservation => {
+    
+            if(reservation.reservationExhibitor.exhibitorEditor == id){
+                array.append(reservation.reservationReservedGame)
+            })
+            return res.status(200).json(array);
+        } catch (err) {
+            return res.status(500).json({message: err});
+        }
+
+    });
+
 /* GET games listing by festival id */
 router.get('/list/festival/:id', async (req, res) => {
 
