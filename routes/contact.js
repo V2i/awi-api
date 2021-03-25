@@ -19,8 +19,6 @@ router.get('/list', async (req, res) => {
 /* GET contacts by exhibitor id */
 router.get('/exhibitor/:id', async (req, res) => {
 
-    //todo: a tester
-
     try {
         const contacts = await Exhibitor.find({_id: req.params.id}, {exhibitorContact: 1})
             .populate('exhibitorContact');

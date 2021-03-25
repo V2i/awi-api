@@ -20,8 +20,6 @@ router.get('/list', async (req, res) => {
 /* GET billings listing by festival id */
 router.get('/list/festival/:id', async (req, res) => {
 
-    //todo: a tester
-
     try {
         const billings = await Reservation.find({reservationFestival: req.params.id}, {reservationBilling: 1})
             .populate('reservationBilling');
@@ -34,8 +32,6 @@ router.get('/list/festival/:id', async (req, res) => {
 
 /* GET billings by exhibitor id */
 router.get('/list/exhibitor/:id', async (req, res) => {
-
-    //todo: a tester
 
     try {
         const billings = await Reservation.find({reservationExhibitor: req.params.id}, {reservationBilling: 1})

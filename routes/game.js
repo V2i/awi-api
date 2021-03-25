@@ -111,21 +111,29 @@ router.get('/list/editor/:id', async (req, res) => {
 
 });
 
-//A TESTER
 /* GET filter games by editor and by festival */
     router.get('/list/editor/:id/festival/:idf', async (req, res) => {
+
         const { id, idf } = req.params;
         try{
-            const array = []
-            const game = await Reservation.find({reservationFestival: idf})
-                .populate('reservationExhibitor')
-    .populate('reservationReservedGame')
-                .forEach( reservation => {
-    
-            if(reservation.reservationExhibitor.exhibitorEditor == id){
-                array.append(reservation.reservationReservedGame)
-            })
-            return res.status(200).json(array);
+            await Reservation.find({reservationFestival: idf, 'reservationReservedGame.0': {$ne: null}}, {reservationReservedGame: 1})
+                .populate({
+                    path: 'reservationReservedGame',
+                    populate: {
+                        path: 'reservedGame reservedGameZone',
+                        populate: {
+                            path : 'gameEditor gameType'
+                        }
+                    }
+                }).then(
+                    reservation => {
+                        const games = reservation.map(r => r.reservationReservedGame
+                            .filter(g => g.reservedGame.gameEditor._id == id))
+                            .flat();
+                        return res.status(200).json(games);
+                    },
+            err => res.status(500).json({message: err})
+                )
         } catch (err) {
             return res.status(500).json({message: err});
         }

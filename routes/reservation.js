@@ -8,12 +8,7 @@ router.get('/list', async (req, res) => {
 
     try {
         const reservations = await Reservation.find()
-            .populate('reservationExhibitor')
-            .populate('reservationReservedSpace')
-            .populate('reservationFestival')
-            .populate('reservationTracking')
-            .populate('reservationReservedGame')
-            .populate('reservationBilling');
+            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
         return res.status(200).json(reservations);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -32,12 +27,6 @@ router.get('/list/festival/:id', async (req, res) => {
                     path: 'exhibitorEditor exhibitorContact reservedGame reservedSpace reservedGameZone',
                 }
             })
-            // .populate('reservationExhibitor')
-            // .populate('reservationReservedSpace')
-            // .populate('reservationFestival')
-            // .populate('reservationTracking')
-            // .populate('reservationReservedGame')
-            // .populate('reservationBilling');
         return res.status(200).json(reservations);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -50,12 +39,7 @@ router.get('/:id', async (req, res) => {
 
     try {
         const reservation = await Reservation.findById(req.params.id)
-            .populate('reservationExhibitor')
-            .populate('reservationReservedSpace')
-            .populate('reservationFestival')
-            .populate('reservationTracking')
-            .populate('reservationReservedGame')
-            .populate('reservationBilling');
+            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
         return res.status(200).json(reservation);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -80,12 +64,7 @@ router.post('/', async (req, res) => {
 
     try {
         const savedReservation = await reservation.save()
-            .populate('reservationExhibitor')
-            .populate('reservationReservedSpace')
-            .populate('reservationFestival')
-            .populate('reservationTracking')
-            .populate('reservationReservedGame')
-            .populate('reservationBilling');
+            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
         return res.status(200).json(savedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -99,12 +78,7 @@ router.patch('/:id', async (req, res) => {
     try{
         await Reservation.updateOne({_id: req.params.id}, {$set: {...req.body}})
         const updatedReservation = await Reservation.findById(req.params.id)
-            .populate('reservationExhibitor')
-            .populate('reservationReservedSpace')
-            .populate('reservationFestival')
-            .populate('reservationTracking')
-            .populate('reservationReservedGame')
-            .populate('reservationBilling');
+            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
         return res.status(200).json(updatedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
@@ -117,12 +91,7 @@ router.delete('/:id', async (req, res) => {
 
     try{
         let reservation = await Reservation.findById(req.params.id)
-            .populate('reservationExhibitor')
-            .populate('reservationReservedSpace')
-            .populate('reservationFestival')
-            .populate('reservationTracking')
-            .populate('reservationReservedGame')
-            .populate('reservationBilling');
+            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
 
         if(!reservation){
             return res.status(403).json({message: "Object Not Found"}).end()

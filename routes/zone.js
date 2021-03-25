@@ -76,7 +76,6 @@ router.delete('/:id', async (req, res) => {
 
 /* GET zones and games listing by festival id */
 router.get('/list/festival/:id', async (req, res) => {
-    console.log("id = " + req.params.id);
     try {
         await Reservation.find({reservationFestival: req.params.id, 'reservationReservedGame.0': {$ne: null}}, {reservationReservedGame: 1})
             .populate({
@@ -89,27 +88,25 @@ router.get('/list/festival/:id', async (req, res) => {
                 }
             }).then(
             reservedGames => {
-                console.log("ok populate");
-                const zonesMapped = [];
+                let zonesMapped = [];
                 reservedGames
                     .forEach(r => r.reservationReservedGame
                         .forEach(g => {
-                            if (!zonesMapped.find(game => game.zone._id == g.reservedGameZone._id)){
+                            if (!zonesMapped.find(game => game.zone._id === g.reservedGameZone._id)){
                                 zonesMapped.push({
                                     zone : g.reservedGameZone,
                                     gameList : [g]
                                 })
                                 
                             }
-                            if (zonesMapped.find(game => game.zone._id == g.reservedGameZone._id) && !zonesMapped.some(z => z.gameList.find(game => game._id == g.reservedGame._id))){
+                            if (zonesMapped.find(game => game.zone._id === g.reservedGameZone._id) && !zonesMapped.some(z => z.gameList.find(game => game._id === g.reservedGame._id))){
                                 zonesMapped = zonesMapped.map(zone => {
-                                    if (zone.zone._id == g.reservedGameZone._id){
+                                    if (zone.zone._id === g.reservedGameZone._id){
                                         zone.gameList = [...zone.gameList, g]
                                     }
                                     return zone
                                 })
                             }
-                            console.log("ok")
                         })
                     )
                 
