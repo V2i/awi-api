@@ -97,14 +97,14 @@ router.get('/list/festival/:id', async (req, res) => {
                             if (!zonesMapped.find(game => game.zone._id == g.reservedGameZone._id)){
                                 zonesMapped.push({
                                     zone : g.reservedGameZone,
-                                    gameList : [g.reservedGame]
+                                    gameList : [g]
                                 })
                                 
                             }
                             if (zonesMapped.find(game => game.zone._id == g.reservedGameZone._id) && !zonesMapped.some(z => z.gameList.find(game => game._id == g.reservedGame._id))){
                                 zonesMapped = zonesMapped.map(zone => {
                                     if (zone.zone._id == g.reservedGameZone._id){
-                                        zone.gameList = [...zone.gameList, g.reservedGame]
+                                        zone.gameList = [...zone.gameList, g]
                                     }
                                     return zone
                                 })
