@@ -32,7 +32,7 @@ router.get('/:id', async (req, res) => {
 
 
 /* POST new user. Only admin */
-router.post('/', admin, async (req, res) => {
+router.post('/', async (req, res) => {
 
     //checking if user already exist
     try {
