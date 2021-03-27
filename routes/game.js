@@ -20,23 +20,21 @@ router.get('/list', async (req, res) => {
 
 /* POST new game */
 router.post('/', async (req, res) => {
-
-    const { game } = req.body;
     
     const newGame = new Game({
-        gameName: game.gameName,
-        gameMinimumAge: game.gameMinimumAge,
-        gameDuration: game.gameDuration,
-        isPrototype: game.isPrototype,
-        gameMinimumPlayers: game.gameMinimumPlayers,
-        gameMaximumPlayers: game.gameMaximumPlayers,
-        gameType: game.gameType,
-        gameEditor: game.gameEditor,
-        gameNotice: game.gameNotice,
+        gameName: req.body.gameName,
+        gameMinimumAge: req.body.gameMinimumAge,
+        gameDuration: req.body.gameDuration,
+        isPrototype: req.body.isPrototype,
+        gameMinimumPlayers: req.body.gameMinimumPlayers,
+        gameMaximumPlayers: req.body.gameMaximumPlayers,
+        gameType: req.body.gameType,
+        gameEditor: req.body.gameEditor,
+        gameNotice: req.body.gameNotice,
     });
     
     try {
-        const savedGame = await newGame.save()
+        const savedGame = (await newGame.save())
             .populate('gameType')
             .populate('gameEditor');
         return res.status(200).json(savedGame);
