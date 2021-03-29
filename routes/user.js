@@ -7,7 +7,7 @@ const admin = require('../middlewares/admin');
 const user = require('../middlewares/user');
 
 /* GET users listing */
-router.get('/list', async (req, res) => {
+router.get('/list', admin, async (req, res) => {
 
     try {
         const users = await User.find();
@@ -19,11 +19,14 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET user by id */
-router.get('/:id', async (req, res) => {
+router.get('/:id', user, async (req, res) => {
 
     try {
-        const user = await User.findById(req.params.id);
-        return res.status(200).json(user);
+        if(req.user._id === req.params.id) {
+            const user = await User.findById(req.params.id);
+            return res.status(200).json(user);
+        } else return res.status(403).json({message: "You are not authorised"})
+
     } catch (err) {
         return res.status(500).json({message: err});
     }
