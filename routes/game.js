@@ -3,6 +3,7 @@ const Reservation = require('../models/Reservation');
 const router = express.Router();
 
 const Game = require('../models/Game');
+const admin = require('../middlewares/admin');
 
 /* GET game listing */
 router.get('/list', async (req, res) => {
@@ -19,7 +20,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* POST new game */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
     
     const newGame = new Game({
         gameName: req.body.gameName,
@@ -41,7 +42,6 @@ router.post('/', async (req, res) => {
     } catch (err) {
         return res.status(500).json({message: err});
     }
-    
 
 });
 
@@ -63,7 +63,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* PATCH  game by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Game.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -78,7 +78,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE game by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let game = await Game.findById(req.params.id)

@@ -2,9 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 const Space = require('../models/Space');
+const admin = require('../middlewares/admin');
+const user = require('../middlewares/user');
 
 /* GET spaces listing */
-router.get('/list', async (req, res) => {
+router.get('/list', user, async (req, res) => {
 
     try {
         const spaces = await Space.find();
@@ -16,7 +18,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET space by id */
-router.get('/:id', async (req, res) => {
+router.get('/:id', user, async (req, res) => {
 
     try {
         const space = await Space.findById(req.params.id);
@@ -28,7 +30,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new space */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const space = new Space({
         spaceName: req.body.spaceName,
@@ -48,7 +50,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH space by id*/
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Space.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -60,7 +62,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE space by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let space = await Space.findById(req.params.id);

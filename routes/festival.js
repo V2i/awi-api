@@ -3,6 +3,7 @@ const router = express.Router();
 const moment = require('moment');
 
 const Festival = require('../models/Festival');
+const admin = require('../middlewares/admin');
 
 /* GET festival listing */
 router.get('/list', async (req, res) => {
@@ -44,7 +45,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new festival */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const festival = new Festival({
         festivalName: req.body.festivalName,
@@ -64,7 +65,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH  festival by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Festival.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -78,7 +79,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE festival by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let festival = await Festival.findById(req.params.id)

@@ -3,9 +3,11 @@ const router = express.Router();
 const moment = require('moment');
 
 const Tracking = require('../models/Tracking');
+const user = require('../middlewares/user');
+const admin = require('../middlewares/admin');
 
 /* GET trackings listing */
-router.get('/list', async (req, res) => {
+router.get('/list', user, async (req, res) => {
 
     try {
         const trackings = await Tracking.find();
@@ -17,7 +19,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET tracking by id */
-router.get('/:id', async (req, res) => {
+router.get('/:id', user, async (req, res) => {
 
     try {
         const tracking = await Tracking.findById(req.params.id);
@@ -29,7 +31,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new tracking */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const tracking = new Tracking({
         trackingWorkflow: req.body.trackingWorkflow,
@@ -48,7 +50,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH tracking by id*/
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Tracking.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -60,7 +62,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE tracking by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let tracking = await Tracking.findById(req.params.id);

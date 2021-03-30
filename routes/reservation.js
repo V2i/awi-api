@@ -2,9 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 const Reservation = require('../models/Reservation');
+const admin = require('../middlewares/admin');
+const user = require('../middlewares/user');
 
 /* GET reservations listing */
-router.get('/list', async (req, res) => {
+router.get('/list', user, async (req, res) => {
 
     try {
         const reservations = await Reservation.find()
@@ -17,7 +19,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET reservations listing by festival id*/
-router.get('/list/festival/:id', async (req, res) => {
+router.get('/list/festival/:id', user, async (req, res) => {
 
     try {
         const reservations = await Reservation.find({reservationFestival: req.params.id})
@@ -35,7 +37,7 @@ router.get('/list/festival/:id', async (req, res) => {
 });
 
 /* GET reservation by id */
-router.get('/:id', async (req, res) => {
+router.get('/:id', user, async (req, res) => {
 
     try {
         const reservation = await Reservation.findById(req.params.id)
@@ -48,7 +50,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new reservation */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const reservation = new Reservation({
         reservationExhibitor: req.body.reservationExhibitor,
@@ -73,7 +75,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH  reservation by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Reservation.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -87,7 +89,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE reservation by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let reservation = await Reservation.findById(req.params.id)

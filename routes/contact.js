@@ -3,9 +3,10 @@ const router = express.Router();
 
 const Contact = require('../models/Contact');
 const Exhibitor = require('../models/Exhibitor');
+const admin = require('../middlewares/admin');
 
 /* GET contacts listing */
-router.get('/list', async (req, res) => {
+router.get('/list', admin, async (req, res) => {
 
     try {
         const contacts = await Contact.find();
@@ -17,7 +18,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET contacts by exhibitor id */
-router.get('/exhibitor/:id', async (req, res) => {
+router.get('/exhibitor/:id', admin, async (req, res) => {
 
     try {
         const contacts = await Exhibitor.find({_id: req.params.id}, {exhibitorContact: 1})
@@ -30,7 +31,7 @@ router.get('/exhibitor/:id', async (req, res) => {
 });
 
 /* GET contact by id */
-router.get('/:id', async (req, res) => {
+router.get('/:id', admin, async (req, res) => {
 
     try {
         const contact = await Contact.findById(req.params.id);
@@ -42,7 +43,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new contact */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const contact = new Contact({
         contactLastname: req.body.contactLastname,
@@ -64,7 +65,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH contact by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Contact.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -77,7 +78,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE contact by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let contact = await Contact.findById(req.params.id);

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const ReservedGame = require('../models/ReservedGame');
+const admin = require('../middlewares/admin');
 
 /* GET reservedGames listing */
 router.get('/list', async (req, res) => {
@@ -32,7 +33,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new reservedGame */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const reservedGame = new ReservedGame({
         reservedGame: req.body.reservedGame,
@@ -56,7 +57,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH reservedGame by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await ReservedGame.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -71,7 +72,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE reservedGame by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let reservedGame = await ReservedGame.findById(req.params.id)

@@ -3,9 +3,10 @@ const router = express.Router();
 
 const Reservation = require('../models/Reservation');
 const Exhibitor = require('../models/Exhibitor');
+const admin = require('../middlewares/admin');
 
 /* GET exhibitors listing */
-router.get('/list', async (req, res) => {
+router.get('/list', admin, async (req, res) => {
 
     try {
         const exhibitors = await Exhibitor.find()
@@ -19,9 +20,7 @@ router.get('/list', async (req, res) => {
 });
 
 /* GET exhibitors listing by festival id*/
-router.get('/list/festival/:id', async (req, res) => {
-
-    //TODO: a tester avec un exposant sans editeur
+router.get('/list/festival/:id', admin, async (req, res) => {
 
     try {
         await Reservation.find({reservationFestival: req.params.id},{reservationExhibitor: 1})
@@ -46,7 +45,7 @@ router.get('/list/festival/:id', async (req, res) => {
 });
 
 /* GET exhibitor by id */
-router.get('/:id', async (req, res) => {
+router.get('/:id', admin, async (req, res) => {
 
     try {
         const exhibitor = await Exhibitor.findById(req.params.id)
@@ -60,7 +59,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new exhibitor */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const exhibitor = new Exhibitor({
         exhibitorEditor: req.body.exhibitorEditor,
@@ -80,7 +79,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH  exhibitor by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Exhibitor.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -95,7 +94,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE exhibitor by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let exhibitor = await Exhibitor.findById(req.params.id)
@@ -110,8 +109,6 @@ router.delete('/:id', async (req, res) => {
     } catch (err) {
         return res.status(500).json({message: err});
     }
-
-
 
 });
 

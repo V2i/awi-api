@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const ReservedSpace = require('../models/ReservedSpace');
+const admin = require('../middlewares/admin');
 
 /* GET reservedSpaces listing */
 router.get('/list', async (req, res) => {
@@ -30,7 +31,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new reservedSpace */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const reservedSpace = new ReservedSpace({
         reservedSpace: req.body.reservedSpace,
@@ -50,7 +51,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH reservedSpace by id*/
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await ReservedSpace.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -63,7 +64,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE reservedSpace by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let reservedSpace = await ReservedSpace.findById(req.params.id)

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const GameType = require('../models/GameType');
+const admin = require('../middlewares/admin');
 
 /* GET gameTypes listing */
 router.get('/list', async (req, res) => {
@@ -28,7 +29,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new gameType */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const gameType = new GameType({
         gameTypeName: req.body.gameTypeName,
@@ -44,7 +45,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH gameType by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await GameType.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -57,7 +58,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE gameType by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let gameType = await GameType.findById(req.params.id);

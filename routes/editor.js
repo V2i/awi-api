@@ -3,6 +3,7 @@ const router = express.Router();
 
 const Editor = require('../models/Editor');
 const Reservation = require('../models/Reservation');
+const admin = require('../middlewares/admin');
 
 /* GET editors listing */
 router.get('/list', async (req, res) => {
@@ -51,7 +52,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new editor */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const editor = new Editor({
         editorName: req.body.editorName,
@@ -67,7 +68,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH  editor by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Editor.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -80,7 +81,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE editor by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let editor = await Editor.findById(req.params.id);

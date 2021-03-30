@@ -3,6 +3,7 @@ const router = express.Router();
 
 const Zone = require('../models/Zone');
 const Reservation = require('../models/Reservation');
+const admin = require('../middlewares/admin');
 
 /* GET zones listing */
 router.get('/list', async (req, res) => {
@@ -29,7 +30,7 @@ router.get('/:id', async (req, res) => {
 });
 
 /* POST new zone */
-router.post('/', async (req, res) => {
+router.post('/', admin, async (req, res) => {
 
     const zone = new Zone({
         zoneName: req.body.zoneName
@@ -45,7 +46,7 @@ router.post('/', async (req, res) => {
 });
 
 /* PATCH zone by id */
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', admin, async (req, res) => {
 
     try{
         await Zone.updateOne({_id: req.params.id}, {$set: {...req.body}})
@@ -58,7 +59,7 @@ router.patch('/:id', async (req, res) => {
 });
 
 /* DELETE zone by id */
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
 
     try{
         let zone = await Zone.findById(req.params.id);

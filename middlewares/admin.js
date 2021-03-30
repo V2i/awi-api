@@ -15,7 +15,7 @@ module.exports = async function (req, res, next) {
             req.user = await User.findOne({_id})
 
             // Check if user is admin
-            if(req.user.isAdmin === 'false') {
+            if(req.user.isAdmin === false) {
                 req.user = null;
                 return res.status(403).json({message: 'You are not admin'});
             }
