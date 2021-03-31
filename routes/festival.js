@@ -22,7 +22,7 @@ router.get('/list', async (req, res) => {
 router.get('/current', async (req, res) => {
 
     try {
-        const festival = await Festival.find({isCurrent: true})
+        const festival = await Festival.findOne({isCurrent: true})
             .populate('festivalSpace');
         return res.status(200).json(festival);
     } catch (err) {
