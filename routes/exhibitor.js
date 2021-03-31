@@ -3,6 +3,7 @@ const router = express.Router();
 
 const Reservation = require('../models/Reservation');
 const Exhibitor = require('../models/Exhibitor');
+const Contact = require('../models/Contact');
 const admin = require('../middlewares/admin');
 
 /* GET exhibitors listing */
@@ -68,9 +69,9 @@ router.post('/', admin, async (req, res) => {
     });
 
     try {
-        const savedExhibitor = (await exhibitor.save())
-            .populate('exhibitorEditor')
-            .populate('exhibitorContact');
+        const savedExhibitor = (await exhibitor.save());
+        await Exhibitor.populate(savedExhibitor, {path: "exhibitorEditor"});
+        await Contact.populate(savedExhibitor, {path: "exhibitorContact"});
         return res.status(200).json(savedExhibitor);
     } catch (err) {
         return res.status(500).json({message: err});
