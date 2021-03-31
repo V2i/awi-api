@@ -30,14 +30,12 @@ const gameSchema = new mongoose.Schema({
         type: Number,
         required: [ true, "Le nombre minimum de joueurs est obligatoire" ],
         default: 1,
-        min: 1
     },
 
     gameMaximumPlayers: {
         type: Number,
         required: [ true, "Le nombre maximum de joueurs est obligatoire" ],
         default: 1,
-        min: 1
     },
 
     gameType: {
