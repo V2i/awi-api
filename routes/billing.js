@@ -74,9 +74,7 @@ router.post('/', user, async (req, res) => {
 
     const billing = new Billing({
         billingStatus: req.body.billingStatus,
-        billingAmount: req.body.billingAmount,
-        billingSendDate: moment(req.body.billingSendDate),
-        billingPaidDate: moment(req.body.billingPaidDate)
+        billingAmount: req.body.billingAmount
     });
 
     try {
