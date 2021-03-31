@@ -10,7 +10,7 @@ const reservationSchema = new mongoose.Schema({
 
     reservationReservedSpace: {
         type: [{ type: mongoose.ObjectId, ref: 'ReservedSpace'}],
-        required: true,
+        required: false,
     },
 
     reservationFestival: {
