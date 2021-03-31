@@ -98,9 +98,7 @@ router.patch('/:id', admin, async (req, res) => {
 router.delete('/:id', admin, async (req, res) => {
 
     try{
-        let exhibitor = await Exhibitor.findById(req.params.id)
-            .populate('exhibitorEditor')
-            .populate('exhibitorContact');
+        let exhibitor = await Exhibitor.findById(req.params.id);
 
         if(!exhibitor){
             return res.status(403).json({message: "Object Not Found"}).end()
