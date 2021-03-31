@@ -68,7 +68,7 @@ router.post('/', admin, async (req, res) => {
     });
 
     try {
-        const savedExhibitor = await exhibitor.save()
+        const savedExhibitor = (await exhibitor.save())
             .populate('exhibitorEditor')
             .populate('exhibitorContact');
         return res.status(200).json(savedExhibitor);
