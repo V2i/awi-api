@@ -12,13 +12,13 @@ const trackingSchema = new mongoose.Schema({
     trackingContact1: {
         type: Date,
         required: false,
-        default: undefined
+        default: null
     },
 
     trackingContact2: {
         type: Date,
         required: false,
-        default: undefined
+        default: null
     },
 
     trackingCR: {
