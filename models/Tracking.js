@@ -3,7 +3,6 @@ const moment = require('moment');
 const enumTrackingWorkflow = ['Pas encore contacté', 'Contacté', 'Discussion en cours', 'Réservation confirmée', 'Jeux demandés', 'Jeux confirmés'];
 const trackingSchema = new mongoose.Schema({
 
-    //todo: enum not working
     trackingWorkflow: {
         type: String,
         required: true,
@@ -13,14 +12,15 @@ const trackingSchema = new mongoose.Schema({
     trackingContact1: {
         type: Date,
         required: false,
+        default: undefined
     },
 
     trackingContact2: {
         type: Date,
         required: false,
+        default: undefined
     },
 
-    // TODO: ask question????
     trackingCR: {
         type: Boolean,
         required: false,
