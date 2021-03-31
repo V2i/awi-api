@@ -35,9 +35,9 @@ router.post('/', admin, async (req, res) => {
 
     const tracking = new Tracking({
         trackingWorkflow: req.body.trackingWorkflow,
-        trackingContact1: moment(req.body.trackingContact1),
-        trackingContact2: moment(req.body.trackingContact2),
-        trackingCR: req.body.trackingCR //todo: may be useless
+        trackingContact1: null,
+        trackingContact2: null,
+        trackingCR: req.body.trackingCR
     });
 
     try {
