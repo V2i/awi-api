@@ -2,6 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 const Reservation = require('../models/Reservation');
+const Exhibitor = require('../models/Exhibitor');
+const ReservedSpace = require('../models/ReservedSpace');
+const ReservedGame = require('../models/ReservedGame');
+const Festival = require('../models/Festival');
+const Tracking = require('../models/Tracking');
+const Billing = require('../models/Billing');
+
 const admin = require('../middlewares/admin');
 const user = require('../middlewares/user');
 
@@ -65,8 +72,20 @@ router.post('/', admin, async (req, res) => {
     });
 
     try {
-        const savedReservation = await reservation.save()
-            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
+        const savedReservation = (await reservation.save());
+        await Exhibitor.populate(savedReservation, {path: "reservationExhibitor"});
+        await ReservedSpace.populate(savedReservation, {path: "reservationReservedSpace"});
+        await Festival.populate(savedReservation, {
+            path: "reservationFestival",
+            populate: {
+                path: "festivalSpace",
+                model: "Space"
+            }
+        });
+        await Tracking.populate(savedReservation, {path: "reservationTracking"});
+        await ReservedGame.populate(savedReservation, {path: "reservationReservedGame"});
+        await Billing.populate(savedReservation, {path: "reservationBilling"});
+
         return res.status(200).json(savedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
