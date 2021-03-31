@@ -1,0 +1,595 @@
+idJeu;libelleJeu;nbMinJoueurJeu;nbMaxJoueurJeu;noticeJeu;idEditeur;idTypeJeu;agemini;prototype;duree;idTypeJeu;libelleTypeJeu;idEditeur;libelleEditeur
+31;Stellium;2;4;;99;1;7;0;30;1;Famille;99;Ankama
+32;Kingdom Run;2;4;;99;1;10;0;15;1;Famille;99;Ankama
+33;HEIN ? Cinéma & Personnalités;3;17;;103;1;10;0;30;1;Famille;103;Tiki
+34;HEIN ? Famille & Culture Pop;3;17;;103;1;10;0;30;1;Famille;103;Tiki
+35;Queendomino;1;4;;104;1;8;0;30;1;Famille;104;Blue Orange
+36;Photosynthesis;2;4;;104;1;10;0;60;1;Famille;104;Blue Orange
+37;Dr Microbe;0;0;;104;1;0;0;0;1;Famille;104;Blue Orange
+38;Kang;0;0;;104;1;0;0;0;1;Famille;104;Blue Orange
+39;Oliver Twist;2;4;;106;1;10;0;45;1;Famille;106;Purple Brain Creations
+40;Jack & Le Haricot Magique;2;5;;106;1;7;0;20;1;Famille;106;Purple Brain Creations
+41;Welcome;1;100;http://www.bluecocker.com/wp-content/uploads/jeux/Welcome/Regles_fr&en.pdf;107;1;10;0;25;1;Famille;107;Blue Cocker Games
+49;Bubblee Pop;2;2;;109;1;8;0;30;1;Famille;109;Bankiiiz Editions
+50;Banquet Royal;2;4;;109;1;7;1;30;1;Famille;109;Bankiiiz Editions
+51;Gravity Stones;1;4;;109;1;12;1;45;1;Famille;109;Bankiiiz Editions
+53;Tandem;0;0;;110;1;0;0;0;1;Famille;110;Flip Flap Editions
+54;Pas de lézard;0;0;;110;1;0;0;0;1;Famille;110;Flip Flap Editions
+55;Nomades;2;5;;111;1;8;0;40;1;Famille;111;Ludonaute
+56;Colt Express;2;6;;111;1;10;0;40;1;Famille;111;Ludonaute
+57;Carta Imperia Victoria;2;4;;111;1;8;0;30;1;Famille;111;Ludonaute
+58;Prochain Jeu Luma;0;0;;111;1;0;1;0;1;Famille;111;Ludonaute
+59;Bourpif;2;4;http://www.paille-editions.com/wp-content/uploads/bourpif.pdf;112;1;7;1;10;1;Famille;112;Paille Editions
+60;Pontu;2;4;;113;1;6;0;20;1;Famille;113;Grain de Créa
+61;Kiwara;2;0;;114;1;8;0;30;1;Famille;114;OZ éditions
+62;Escape Book;0;0;;115;1;0;0;0;1;Famille;115;Edition 404
+63;POC;0;0;;116;1;0;0;0;1;Famille;116;Jeux Opla
+64;Panic Island !;1;8;;117;1;8;0;2;1;Famille;117;Old Chap
+65;Débrouille-toi !;2;6;;119;1;8;0;20;1;Famille;119;Le Droit de Perdre
+66;J'aime beaucoup ce que vous dites;2;6;;119;1;16;0;25;1;Famille;119;Le Droit de Perdre
+67;Comment j'ai adopté un gnou;2;8;;119;1;8;0;20;1;Famille;119;Le Droit de Perdre
+68;Comment j'ai adopté un dragon;3;8;;119;1;7;0;20;1;Famille;119;Le Droit de Perdre
+69;Ta Bouche;3;8;https://www.didacto.com/index.php?controller=attachment&id_attachment=1557;119;1;7;0;20;1;Famille;119;Le Droit de Perdre
+70;Taggle;3;10;https://www.youtube.com/watch?v=k0xeLQC7bl4&t=;119;1;14;0;20;1;Famille;119;Le Droit de Perdre
+71;Taggle d'amour;2;4;;119;1;16;0;20;1;Famille;119;Le Droit de Perdre
+72;Troquons !;3;9;;119;1;12;0;20;1;Famille;119;Le Droit de Perdre
+74;Karuba;2;4;;123;1;8;0;40;1;Famille;123;Haba
+76;Iquazù;2;4;;123;1;10;0;50;1;Famille;123;Haba
+83;Dice Forge;2;4;;124;1;10;0;45;1;Famille;124;Libellud
+84;Attack of the Jelly Monster;3;5;;124;1;8;0;15;1;Famille;124;Libellud
+90;Le jeu du potager;0;0;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=14;126;1;0;0;0;1;Famille;126;Bioviva
+91;Bioviva Junior;2;4;;126;1;5;0;20;1;Famille;126;Bioviva
+92;Défis nature;2;6;;126;1;4;0;16;1;Famille;126;Bioviva
+93;Défis Nature Chrono;2;4;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=58;126;1;7;0;20;1;Famille;126;Bioviva
+95;Mot pour mot;2;16;;129;1;8;0;20;1;Famille;129;Scorpion Masqué
+96;Decrypto;3;8;https://www.scorpionmasque.com/sites/scorpionmasque.com/files/decrypto_rules_fr_03oct2017_v2.pdf;129;1;12;0;30;1;Famille;129;Scorpion Masqué
+97;Chasse aux monstres & Monstrueux;2;4;;129;1;5;0;10;1;Famille;129;Scorpion Masqué
+98;Paper Tales;2;5;;130;1;12;0;45;1;Famille;130;Catch Up Games
+99;Twelve heroes;2;0;;130;1;12;0;30;1;Famille;130;Catch Up Games
+100;Little Big Fish;2;0;;132;1;8;0;20;1;Famille;132;The Flying Games
+102;Time Arena;2;4;;135;1;10;0;10;1;Famille;135;Blam!
+103;Doggy Bag;2;6;;135;1;8;0;20;1;Famille;135;Blam!
+109;Kimono;2;4;;166;1;10;0;30;1;Famille;166;Superlude
+110;Chawaï;3;6;;166;1;9;0;10;1;Famille;166;Superlude
+111;Doodle Islands;0;0;;166;1;0;0;0;1;Famille;166;Superlude
+116;Clank ! Trésors engloutis;2;4;;168;1;12;0;60;1;Famille;168;Renegade France
+117;Ex Libris;1;4;;168;1;12;0;60;1;Famille;168;Renegade France
+118;Mission pas possible;1;5;;168;1;10;0;10;1;Famille;168;Renegade France
+120;Codenames duo;2;0;;146;1;12;0;15;1;Famille;146;Iello
+121;King of Tokyo;2;6;http://iello.fr/regles/regles_KOTv2.pdf;146;1;8;0;30;1;Famille;146;Iello
+122;Bunny Kingdom;2;4;;146;1;12;0;40;1;Famille;146;Iello
+123;Ademimo;3;6;;146;1;8;0;20;1;Famille;146;Iello
+124;TimeBomb;4;8;https://www.youtube.com/watch?v=xA61Nzne0Fg;146;1;8;0;15;1;Famille;146;Iello
+125;SOS Dino;1;4;http://iello.fr/regles/SOS_DINO.pdf;228;1;7;0;25;1;Famille;228;Loki
+128;Small Detectives;2;5;;160;1;8;0;20;1;Famille;160;Pixie Games
+130;Jeux d'énigmes conçus spécifiquement par Prizonner;0;0;;169;1;0;0;0;1;Famille;169;Prizonners
+131;Imaginarium;2;5;http://www.studiobombyx.com/espacepro/imaginarium/IMAGINARIUM_Rulebook_FR_Presse.pdf;139;1;14;0;90;1;Famille;139;Bombyx
+132;Cardline Animaux;2;8;;100;1;7;0;15;1;Famille;100;Asmodee
+136;Abalone;2;0;;100;1;8;0;30;1;Famille;100;Asmodee
+137;Mixmo;2;6;;100;1;8;0;30;1;Famille;100;Asmodee
+146;Dr Pilule;4;10;https://www.docteurpilule.com/pages/presentation-du-jeu;141;1;10;0;30;1;Famille;141;Docteur Pilule
+147;Harald;2;4;;163;1;10;0;30;1;Famille;163;Runes Editions
+148;Blackwood;2;4;;163;1;10;0;60;1;Famille;163;Runes Editions
+149;Bubblee Pop Level Up (extension Bubblee Pop);2;2;;109;1;8;0;30;1;Famille;109;Bankiiiz Editions
+150;Comme des rats;2;5;;103;1;8;0;20;1;Famille;103;Tiki
+151;Feelings;3;8;;97;1;8;0;30;1;Famille;97;Act in Games
+152;Memoaar (si arrivé à Cannes);0;0;;97;1;0;0;0;1;Famille;97;Act in Games
+153;Ilos;2;5;;149;1;10;0;45;1;Famille;149;La Boite de Jeu
+154;Grumpf;2;6;;149;1;8;0;15;1;Famille;149;La Boite de Jeu
+155;Kamarka;2;4;;151;1;10;0;0;1;Famille;151;Lumberjack
+156;Arboria;2;4;;151;1;10;0;45;1;Famille;151;Lumberjack
+157;Deep Sea Adventure;2;6;;160;1;8;0;30;1;Famille;160;Pixie Games
+159;Qwarks;2;8;;160;1;8;0;20;1;Famille;160;Pixie Games
+160;Loot Island;2;5;;160;1;10;0;120;1;Famille;160;Pixie Games
+162;Splendor + extension;2;4;https://www.spacecowboys.fr/img/games/splendor/details/rules/Rules_Splendor_FR.pdf;165;1;10;0;30;1;Famille;165;Space Cowboy
+163;Sherlock Holmes;1;6;;165;1;12;0;40;1;Famille;165;Space Cowboy
+164;Unlock - 5ème avenue;1;6;;165;1;12;0;90;1;Famille;165;Space Cowboy
+219;Dwarfs;2;4;;102;1;12;0;45;1;Famille;102;Atalia
+220;Kryptos;3;6;;102;1;8;0;15;1;Famille;102;Atalia
+227;Lumens;2;4;;173;1;8;0;30;1;Famille;173;Queen Games
+228;Magic Maze + ext Max Secur;1;8;;174;1;8;0;15;1;Famille;174;Sit Down!
+231;Ice Cool;2;4;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=164;176;1;6;0;20;1;Famille;176;Brain Games
+232;Thèbes;2;4;;173;1;10;0;90;1;Famille;173;Queen Games
+233;Limite Limite Limite;3;12;;102;1;18;0;30;1;Famille;102;Atalia
+234;Limite Limite;3;10;;102;1;18;0;30;1;Famille;102;Atalia
+235;Watizit;3;8;;161;1;8;0;20;1;Famille;161;Ravensburger
+236;Krazy Wordz;3;7;;161;1;10;0;45;1;Famille;161;Ravensburger
+237;Paku Paku;0;0;;161;1;0;0;0;1;Famille;161;Ravensburger
+238;Loup-garou;8;18;;161;1;8;0;30;1;Famille;161;Ravensburger
+240;Chrono-Mots;2;10;;138;1;10;0;20;1;Famille;138;Gigamic
+241;Kontour;3;7;https://www.gigamic.com/files/catalog/products/rules/gigamic_kontour_rules_10-2017.pdf;138;1;10;0;20;1;Famille;138;Gigamic
+242;Yogi;3;10;https://www.gigamic.com/files/catalog/products/rules/gigamic_yogi_rules_fr_07-2017.pdf;138;1;8;0;15;1;Famille;138;Gigamic
+244;Katarenga;2;0;;138;1;8;0;20;1;Famille;138;Gigamic
+245;13 Indices;2;6;https://www.gigamic.com/files/catalog/products/rules/gigamic_13-indices_rules_web.pdf;138;1;8;0;30;1;Famille;138;Gigamic
+248;Poker Dice;2;5;http://www.djeco.com/data/rules/DJ08480_FR.pdf;133;1;8;0;10;1;Famille;133;Djeco
+253;Aventurier du Rail France;2;6;;105;1;8;0;75;1;Famille;105;Days of Wonder
+254;Aventurier du Rail Europe;2;5;;105;1;8;0;40;1;Famille;105;Days of Wonder
+255;Les Aventuriers du Rail : Mon Premier Voyage;2;4;;105;1;6;0;20;1;Famille;105;Days of Wonder
+256;Small World;2;5;;105;1;8;0;75;1;Famille;105;Days of Wonder
+257;Chimère;2;5;;127;1;8;0;30;1;Famille;127;Game Flow
+258;Flamme rouge;2;4;;138;1;8;0;45;1;Famille;138;Gigamic
+259;Dragons;3;6;https://www.matagot.com/data/atasamente/Dragons_FR.pdf;153;1;8;0;30;1;Famille;153;Matagot
+260;Micropolis;2;6;;153;1;8;0;30;1;Famille;153;Matagot
+261;Princess Jing;2;0;https://www.matagot.com/data/atasamente/Rules_FR.pdf;153;1;8;0;25;1;Famille;153;Matagot
+262;Meeple Circus;2;5;;153;1;8;0;45;1;Famille;153;Matagot
+266;Indian Summer;1;4;;118;1;10;0;60;1;Famille;118;Blackrock Games
+267;Memoaaar;0;0;;118;1;0;0;0;1;Famille;118;Blackrock Games
+271;Décrocher la lune;2;6;https://studiobombyx.com/assets/DECROCHER-LA-LUNE_rulebook_FR.pdf;139;1;6;0;20;1;Famille;139;Bombyx
+272;Welcome to the dungeon;2;4;;146;1;8;0;30;1;Famille;146;Iello
+273;Exposition universelle;2;4;;168;1;14;0;45;1;Famille;168;Renegade France
+274;Citadelles 4ème édition;2;8;;142;1;10;0;45;1;Famille;142;Edge
+276;Watson and Holmes;2;7;;165;1;12;0;60;1;Famille;165;Space Cowboy
+277;Nmbr 9;1;4;;179;1;8;0;20;1;Famille;179;Z-Man Games
+278;We are the word;3;7;;180;1;8;0;20;1;Famille;180;Fun Consortium
+280;Jamaïca;2;6;;181;1;8;0;40;1;Famille;181;Gameworks
+282;Jaipur;2;0;;181;1;12;0;30;1;Famille;181;Gameworks
+283;Lindisfarne;2;4;https://docs.wixstatic.com/ugd/98bc72_6a921a47876a4fa8aab4ee9e21de1cd2.pdf;163;1;10;0;45;1;Famille;163;Runes Editions
+284;Tag City;2;4;https://docs.wixstatic.com/ugd/98bc72_640823a38a2941b4a3507103d64c98f9.pdf;163;1;8;0;20;1;Famille;163;Runes Editions
+288;Dobble;2;8;https://images-fr-cdn.asmodee.com/eu-central-1/filer_public/92/3b/923b1bbc-0f39-466c-836f-9e33d911c291/dobb01fr_rules_lr.pdf;100;1;6;0;10;1;Famille;100;Asmodee
+289;Timeline;2;8;https://images-fr-cdn.asmodee.com/eu-central-1/filer_public/b7/a0/b7a05044-09a3-4098-a5ad-6b4d3222f36d/timeline_rules.pdf;100;1;8;0;10;1;Famille;100;Asmodee
+290;Perplexus Harry Potter;1;1;Y a-t-il vraiment des règles ?;100;1;6;0;10;1;Famille;100;Asmodee
+291;TV Show;3;7;Non trouvée;100;1;12;0;30;1;Famille;100;Asmodee
+293;NagaRaja;2;2;;145;1;10;0;0;1;Famille;145;Hurrican Edition
+294;Gizmos;2;4;;142;1;14;0;50;1;Famille;142;Edge
+295;Art of War;0;0;;131;1;0;0;0;1;Famille;131;Igiari
+296;Stay Cool;3;7;https://www.scorpionmasque.com/sites/scorpionmasque.com/files/sc_rules_fr_21nov2018.pdf;129;1;12;0;25;1;Famille;129;Scorpion Masqué
+299;Le Petit Poucet;2;5;Non trouvée;106;1;6;0;20;1;Famille;106;Purple Brain Creations
+300;Orbis;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwi7_fvNnbngAhUMQhoKHacXAKMQFjABegQIBxAC&url=https%3A%2F%2Fgusandco.net%2Fwp-content%2Fuploads%2F2018%2F10%2FRegles-Orbis-FR-BD.pdf&usg=AOvVaw3GPA0uukMjmo-ZOJnvjzFO;165;1;10;0;45;1;Famille;165;Space Cowboy
+301;Unlock;1;6;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwi05Jqurr7gAhUQmRQKHTSKAH0QFjAAegQIBxAC&url=https%3A%2F%2Fimages-cdn.asmodee.us%2Ffiler_public%2F59%2Fc5%2F59c5ef68-df2b-4ebc-9455-fbbb191b3e35%2Funlock_rules.pdf&usg=AOvVaw3sHxTix4WMV6f7lMM-kFRF;165;1;12;0;90;1;Famille;165;Space Cowboy
+302;Solenia;1;4;https://pearlgames.be/wp-content/uploads/2018/09/SOLENIA_RULES_EN_22_08_18LD.pdf;158;1;10;0;30;1;Famille;158;Pearl Games
+303;Affinity;3;8;http://www.game-flow.fr/affinity;127;1;8;0;20;1;Famille;127;Game Flow
+305;Dice Forge + extension Dice Forge Rebellion;2;4;http://www.libellud.com/index.php?option=com_zoo&task=callelement&format=raw&item_id=4180&element=66b58ffc-c789-4cef-b9f1-2cb5226ebace&method=download&args[0]=eb4598cecd33d3ab906dde2d31c48926&Itemid=57;124;1;10;0;45;1;Famille;124;Libellud
+306;Shadow - Amsterdam (mieux à >=6j);2;8;http://www.libellud.com/index.php?option=com_zoo&task=callelement&format=raw&item_id=5924&element=66b58ffc-c789-4cef-b9f1-2cb5226ebace&method=download&args[0]=1c919999ceb0d5bcc2dfdd01bfffa8c0&Itemid=57;124;1;10;0;30;1;Famille;124;Libellud
+308;Escape Book;1;1;;193;1;12;0;30;1;Famille;193;404 Editions
+309;Le Cercle des Enquêteurs;3;6;;194;1;10;0;30;1;Famille;194;Editions Pera
+310;Ksar;2;2;http://www.paille-editions.com/wp-content/uploads/ksar.pdf;195;1;7;0;30;1;Famille;195;Ludarden
+311;Arkantar;2;2;http://www.paille-editions.com/wp-content/uploads/arkantar.pdf;196;1;8;0;30;1;Famille;196;Arborel
+312;Par Odin;1;1;;117;1;8;0;30;1;Famille;117;Old Chap
+313;Shy Monsters;2;2;Non trouvée;114;1;10;0;30;1;Famille;114;OZ éditions
+314;Crypt;1;4;http://www.oz-editions.com/wp-content/uploads/2018/10/Crypt_booklet_FR_printerFriendly.pdf;114;1;12;0;30;1;Famille;114;OZ éditions
+315;SuperNat contre MaxiBeurk;2;4;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=124;126;1;5;0;20;1;Famille;126;Bioviva
+317;Kids of London;2;5;http://www.lahauteroche.eu/LHR_GRAFIK/VISUELS_PAGES/page_KOLrules.jpg;191;1;8;0;10;1;Famille;191;La Haute Roche
+318;Game Over;2;4;http://www.lahauteroche.eu/LHR_GRAFIK/DOCUMENTS/GameOver_FR.pdf;191;1;5;0;15;1;Famille;191;La Haute Roche
+319;Shabadabada;4;16;http://regle.jeuxsoc.fr/shaba_rg.pdf;191;1;8;0;45;1;Famille;191;La Haute Roche
+320;Sonar Family;2;4;https://www.matagot.com/data/atasamente/SONARFAMILY_REGLES_LD.pdf;153;1;8;0;60;1;Famille;153;Matagot
+321;Claim;2;2;;153;1;10;0;30;1;Famille;153;Matagot
+322;Plouf Party XL;3;6;http://www.cocktailgames.com/wp-content/uploads/2018/02/Plouf_party_regles_BD.pdf;128;1;6;0;30;1;Famille;128;Cocktail Games
+323;Selfie Safari;4;9;http://www.cocktailgames.com/wp-content/uploads/2018/10/Selfie_Safari_regles_0818_BD.pdf;128;1;6;0;20;1;Famille;128;Cocktail Games
+324;Portrait Robot;3;6;http://www.cocktailgames.com/wp-content/uploads/2018/10/Portrait_robot_regles_0118_BD.pdf;128;1;10;0;3;1;Famille;128;Cocktail Games
+325;Imagine;3;8;http://www.cocktailgames.com/wp-content/uploads/2017/11/Imagine_Re%CC%80gles_0417_BD.pdf;128;1;12;0;30;1;Famille;128;Cocktail Games
+326;Le Ciel Interdit;2;5;http://www.cocktailgames.com/wp-content/uploads/2018/08/Le_ciel_interdit_regles_BD.pdf;128;1;10;0;60;1;Famille;128;Cocktail Games
+327;La salsa des oeufs;2;4;https://www.cocktailgames.com/wp-content/uploads/2018/07/Salsa_des_oeufs_regles_BD_BD.pdf;128;1;7;0;15;1;Famille;128;Cocktail Games
+328;Le Monstre des Couleurs;2;5;https://boardgamegeek.com/filepage/168818/color-monster-rulebook;106;1;4;0;20;1;Famille;106;Purple Brain Creations
+333;Dosa;1;6;Non trouvée;186;1;9;0;15;1;Famille;186;Tactic
+335;Eski’Pêche ;2;6;Non trouvée;186;1;7;0;40;1;Famille;186;Tactic
+338;US Telegraph;2;4;http://www.supermeeple.com/wp-content/uploads/2018/06/USTelegraph-Rules-FR-210x290.pdf;136;1;10;0;60;1;Famille;136;Super Meeple
+339;Deckscape;0;0;;136;1;0;0;0;1;Famille;136;Super Meeple
+342;Roi et Compagnie;2;5;https://cdn.haba.de/content/medias/manual/303486-roi-et-compagnie-regle-du-jeu-fr.pdf;123;1;8;0;30;1;Famille;123;Haba
+344;Ploufette en mission;2;4;https://cdn.haba.de/content/medias/manual/303993-castle-climbing-frog-instructions-5s.pdf;123;1;5;0;20;1;Famille;123;Haba
+347;Théo le Pompier;1;8;https://cdn.haba.de/content/medias/manual/303807-mes-feuerwehr-spielanleitung-6s.pdf;123;1;2;0;10;1;Famille;123;Haba
+348;Ma Première Pêche;1;4;https://cdn.haba.de/content/medias/manual/4983-here-fishy-fishy-instructions-6s.pdf;123;1;2;0;5;1;Famille;123;Haba
+350;Corinth;2;4;https://www.daysofwonder.com/fr/presskit/CR/;105;1;8;0;30;1;Famille;105;Days of Wonder
+351;The River;2;4;https://www.daysofwonder.com/fr/presskit/RE/;105;1;8;0;45;1;Famille;105;Days of Wonder
+352;Les Aventuriers du Rail - New-York;2;4;https://www.daysofwonder.com/fr/presskit/TT_NY/;105;1;8;0;15;1;Famille;105;Days of Wonder
+353;Red7;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&ved=2ahUKEwiayuSb8dngAhVzRhUIHSMSAEwQFjAEegQIBBAC&url=http%3A%2F%2Fasmadigames.com%2FRed7_FR.pdf&usg=AOvVaw0B0RE6f4vSCt6A9ta6A121;177;1;9;0;10;1;Famille;177;Nut’s Publishing 
+355;L'expédition perdue;1;5;https://boardgamegeek.com/filepage/147858/english-language-rule-book;177;1;12;0;60;1;Famille;177;Nut’s Publishing 
+358;Mu;1;5;http://bankiiiz.com/Mu/Mu.pdf;109;1;10;0;25;1;Famille;109;Bankiiiz Editions
+360;Démo Escape Game sur tablette;0;0;;198;1;0;0;0;1;Famille;198;Live Corp
+362;Ganymede;2;4;https://ganymede.sorryweare.fr/GANYMEDE-FR.pdf;199;1;14;0;40;1;Famille;199;Sorry we are french
+363;Greenville 1989;2;6;https://greenville1989.sorryweare.fr/GREENVILLE1989-FR.pdf;199;1;14;0;60;1;Famille;199;Sorry we are french
+364;Gobi;2;4;https://boardgamegeek.com/filepage/169198/gobi-livret-de-regle-en-francais;146;1;10;0;40;1;Famille;146;Iello
+365;8Bit Box;3;6;http://iello.fr/regles/8Bit-Box-rulebook-FR.zip;146;1;10;0;30;1;Famille;146;Iello
+366;Downforce;2;6;https://www.iello.fr/regles/51507_regles.pdf;146;1;10;0;30;1;Famille;146;Iello
+367;Pictomania;3;6;https://www.iello.fr/regles/Pictomania_new%20edition.pdf;146;1;8;0;20;1;Famille;146;Iello
+368;CS files + 1ere extension;4;12;https://boardgamegeek.com/file/download_redirect/72e2b897fbdebc3ad353b4189a6a9e60b506139b7e0686d8/CS_files_fr.pdf;146;1;14;0;20;1;Famille;146;Iello
+370;Gangster Paradise;3;5;https://ludact.fr/wp-content/uploads/2018/06/r%C3%A8gles-finales.pdf;192;1;13;0;60;1;Famille;192;Ludact
+371;Drekki (prototype);2;6;http://www.aonaka.com/ludact-drekki-boite-et-regles-du-jeu/;192;1;10;0;30;1;Famille;192;Ludact
+373;Fertility;2;4;http://catchupgames.com/media/fertility/fertility_regles_fr.pdf;130;1;10;0;45;1;Famille;130;Catch Up Games
+381;Manhattan;2;4;http://www.act-in-games.com/fr/manhattan/regles;97;1;8;0;30;1;Famille;97;Act in Games
+382;L'école des loisirs;0;0;;118;1;0;0;0;1;Famille;118;Blackrock Games
+383;Speed colors;2;5;http://regle.jeuxsoc.fr/spcol_rg.pdf;207;1;5;0;15;1;Famille;207;Lifestyle boardgames
+386;Honga;2;5;https://cdn.haba.de/content/medias/manual/304321-honga-spielanleitung-de.pdf?mode=download;123;1;8;0;20;1;Famille;123;Haba
+387;Mountains;2;5;https://cdn.haba.de/content/medias/manual/304367-mountains-regle-du-jeu-fr.pdf;123;1;8;0;30;1;Famille;123;Haba
+388;Slide Quest;1;4;http://www.blueorangegames.eu/wp-content/uploads/2019/02/SlideQuest-Rules-ML.pdf;104;1;7;0;45;1;Famille;104;Blue Orange
+389;Beta Bots;2;4;http://www.blueorangegames.eu/wp-content/uploads/2019/02/MoonBots-Rules-ML.pdf;104;1;7;0;30;1;Famille;104;Blue Orange
+390;Sherlock Express;2;6;http://www.blueorangegames.eu/wp-content/uploads/2019/02/SherlockExpress-Rules-FR.pdf;104;1;7;0;10;1;Famille;104;Blue Orange
+391;Dice Academy;2;6;Non trouvée;104;1;8;0;15;1;Famille;104;Blue Orange
+392;King Domino + Age of giants;2;4;http://www.blueorangegames.eu/wp-content/uploads/2017/04/KINGDOMINO_rules_ML.pdf;104;1;8;0;15;1;Famille;104;Blue Orange
+393;Kuala;1;4;http://www.blueorangegames.eu/wp-content/uploads/2019/01/Kuala-Map-Rules-FR.pdf;104;1;7;0;45;1;Famille;104;Blue Orange
+400;FlipShips;1;4;https://www.renegade-france.fr/flipships/;168;1;8;0;30;1;Famille;168;Renegade France
+401;Gunkimono;2;5;https://www.renegadegamestudios.com/s/Gunkimono-Rulebook-lo-res_5_7_18.pdf;168;1;10;0;60;1;Famille;168;Renegade France
+402;Le Renard des Bois;2;2;https://www.renegade-france.fr/lerenarddesbois/;168;1;10;0;30;1;Famille;168;Renegade France
+403;L'Auberge des Pirates;2;8;https://www.origames.fr/lauberge-des-pirates/;168;1;7;0;15;1;Famille;168;Renegade France
+404;Pandai;2;4;Non dispo ?;168;1;7;0;25;1;Famille;168;Renegade France
+405;Chapito;2;4;https://www.gigamic.com/files/catalog/products/rules/gigamic_chapito_rules_02-2018_web.pdf;138;1;7;0;15;1;Famille;138;Gigamic
+406;Squadro;2;2;https://www.gigamic.com/files/catalog/products/rules/gigamic_squadro_rules_web_01-2019.pdf;138;1;8;0;15;1;Famille;138;Gigamic
+407;Catham City;2;6;https://www.gigamic.com/files/catalog/products/rules/gigamic_catham-city_rules_12-2018_bd.pdf;138;1;12;0;30;1;Famille;138;Gigamic
+408;Cosmic Factory;2;6;https://www.gigamic.com/files/catalog/products/rules/gigamic_cosmic-factory_rules-fr_08-2018-opt.pdf;138;1;10;0;30;1;Famille;138;Gigamic
+417;Festo !;2;5;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=174;102;1;8;0;60;1;Famille;102;Atalia
+429;Wingspan;1;5;Non dispo;153;1;10;0;70;1;Famille;153;Matagot
+432;L'Île au Trésor;2;5;https://www.matagot.com/data/atasamente/R%C3%A8gles_FR_V4_LD.pdf;153;1;10;0;60;1;Famille;153;Matagot
+433;Draftosaurus;2;5;https://dl.dropboxusercontent.com/apitl/1/AAAcDJC4rHWwHoyFGamJTWR91_5EvlsYQfLogMvhB-quimEle1JR8Bm1Zwz9Y5epm5OCk63dbF-tkxqBSno3aw8ERKLiq2yJ7EPCu9lBlbq3Q1WWoM_SWaB6f3gSv82_iRxF3s33lD8tzuK0h7VACWV8kNwZSjBSyVb8ufNQSxRAda_08W7u_2yapP3HokgbnRoXEGwYzeeW42j5m3x91ethEiVfLVg9vBEWA0deJ0skE6iGHr37pb2ZZOd8qPmBwF9vMaU3ZOEvvn98pv4HV1fvXMski0jSD7hZyYA0NHqDacWlrdwf8FsaQIxhC3kfD2Y;99;1;8;0;15;1;Famille;99;Ankama
+434;Celestia;2;6;;135;1;8;0;30;1;Famille;135;Blam!
+435;Chakra;2;4;http://blam-edition.com/medias/5c3c8e58ad8c2_regle_chakra_FR_depliant_var2.pdf;135;1;8;0;30;1;Famille;135;Blam!
+438;Architectura;2;4;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=169;210;1;8;0;30;1;Famille;210;Game Brewer
+440;Magic Maze;1;8;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=52;174;1;8;0;15;1;Famille;174;Sit Down!
+441;Gravity Superstar;2;6;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=168;174;1;7;0;30;1;Famille;174;Sit Down!
+442;Ice Cool2;2;4;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=164;176;1;6;0;20;1;Famille;176;Brain Games
+449;Peanuts Club;3;6;https://www.youtube.com/watch?v=dFey6ztBNOM;151;1;8;0;20;1;Famille;151;Lumberjack
+451;Palm Island;1;2;;177;1;12;0;15;1;Famille;177;Nut’s Publishing 
+456;Robby One;3;10;https://www.flipflapeditions.fr/wp-content/uploads/2019/10/FLIP-ROBBY-re%CC%80gles-WEB.pdf;110;1;8;0;30;1;Famille;110;Flip Flap Editions
+457;Crazy Time;3;10;https://www.flipflapeditions.fr/wp-content/uploads/2019/10/crazy-time.pdf;110;1;10;0;45;1;Famille;110;Flip Flap Editions
+459;La Forêt des Frères Grimm;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&ved=2ahUKEwiV1t-w45fnAhXNz4UKHVE5DzgQFjAHegQIBRAB&url=https%3A%2F%2Fluckyduckgames.com%2Fpdf%2Frulebooks%2Frulebook_gf_french.pdf&usg=AOvVaw3Knx5oqvkr-cqsFMKeGzmb;175;1;14;0;60;1;Famille;175;Lucky Duck Games
+460;Tiny Towns;1;6;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwiSpsjB5JfnAhUPyYUKHT-iDCAQFjABegQIARAB&url=https%3A%2F%2Fwww.alderac.com%2Fwp-content%2Fuploads%2F2018%2F11%2FTiny_Towns_Rules_FINAL.pdf&usg=AOvVaw0QDdwonqNm7JITVjPiuBtu;175;1;14;0;60;1;Famille;175;Lucky Duck Games
+461;Paranormal Detectives;2;6;https://boardgamegeek.com/file/download_redirect/9f5787214926a3c366396b77bd811d5d88633a39ad6f4ed0/PD+Rulebook+EN.pdf;175;1;12;0;60;1;Famille;175;Lucky Duck Games
+462;Jetpack Joyride;1;4;https://www.dropbox.com/s/73co5gahth953lt/2018-05-29%20JJ%20Rulebook.pdf?dl=0;175;1;8;0;30;1;Famille;175;Lucky Duck Games
+463;Deep Blue;2;5;https://www.philibertnet.com/fr/index.php?controller=attachment&id_attachment=3507;105;1;8;0;60;1;Famille;105;Days of Wonder
+464;les Aventuriers du Rail - Japon & Italie;2;5;https://ncdn1.daysofwonder.com/tickettoride/fr/img/tt_mc7_japan_rules_fr.pdf;105;1;8;0;60;1;Famille;105;Days of Wonder
+465;Marchands du Nord;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwiLqLrp6ZfnAhUiyYUKHShrA_oQFjABegQIBRAB&url=http%3A%2F%2Fwww.lahauteroche.eu%2FLHR_GRAFIK%2FDOCUMENTS%2FRules_MDN_010719.pdf%3Fdl%3D0&usg=AOvVaw1otAOMa-ocZDmrCA6oLotJ;191;1;10;0;60;1;Famille;191;La Haute Roche
+466;Empédocle;2;5;;217;1;10;0;30;1;Famille;217;Poptalks
+467;Phone Bomb;3;6;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwjhkJH6l5znAhUE1RoKHdyQCeEQFjAAegQIBBAB&url=http%3A%2F%2Fressources.auroragames.fr%2Fphonebomb%2FPhoneBomb-R%25C3%25A8gles.pdf&usg=AOvVaw2Qg-C09Lrag9XTPryC0Bbq;218;1;10;0;30;1;Famille;218;Aurora
+468;Crime Zoom;1;10;;218;1;10;0;60;1;Famille;218;Aurora
+469;Crime Hotel;3;4;http://ressources.auroragames.fr/crimehotel/CrimeHotel.pdf;218;1;8;0;45;1;Famille;218;Aurora
+470;Fabulia;2;6;http://lifestyle-boardgames.fr/assets/components/fileattach/connector.php?action=web/download&ctx=web&fid=WBsU3BBBPMk0IcbdwnSfwh0UsijtbY57;207;1;4;0;30;1;Famille;207;Lifestyle boardgames
+471;Yokai;2;4;http://www.bankiiiz.com/Yokai/Yokai.pdf;109;1;8;0;20;1;Famille;109;Bankiiiz Editions
+473;Cap'tain Carcasse;2;4;https://studiobombyx.com/assets/CAPTAINECARCASSE_rulebook_FR.pdf;139;1;8;0;15;1;Famille;139;Bombyx
+475;Décrocher la Lune (surdimensionné);2;6;https://studiobombyx.com/assets/DECROCHER-LA-LUNE_rulebook_FR.pdf;139;1;6;0;20;1;Famille;139;Bombyx
+476;Soviet kitchen;1;6;https://www.philibertnet.com/fr/index.php?controller=attachment&id_attachment=3843;131;1;14;0;30;1;Famille;131;Igiari
+477;Invictus;2;2;https://www.philibertnet.com/fr/index.php?controller=attachment&id_attachment=3844;131;1;14;0;30;1;Famille;131;Igiari
+479;RRR;0;0;;131;1;0;0;0;1;Famille;131;Igiari
+480;Flash 8;1;4;https://www.scorpionmasque.com/sites/scorpionmasque.com/files/flh_rules_fr_web.pdf;129;1;7;0;15;1;Famille;129;Scorpion Masqué
+481;Obscurio;2;8;https://www.philibertnet.com/fr/index.php?controller=attachment&id_attachment=3488;124;1;10;0;60;1;Famille;124;Libellud
+482;Mysterium Park (prototype);0;0;;124;1;0;0;0;1;Famille;124;Libellud
+485;Ankh'or;2;4;https://017aae6e-7d2b-4a50-9dfc-d78eced3774e.filesusr.com/ugd/59baa2_1c57a034eb2b4f8da905ec5f6360452c.pdf;165;1;10;0;30;1;Famille;165;Space Cowboy
+489;Elastium;2;4;http://lifestyle-boardgames.fr/assets/components/fileattach/connector.php?action=web/download&ctx=web&fid=ljnOI4njy28Go0yDY4Z3ZdhcmFN6Szvd;207;1;8;0;40;1;Famille;207;Lifestyle boardgames
+490;Klimato;2;5;;215;1;8;0;20;1;Famille;215;Subverti
+491;Révolution;3;6;https://subverti.com/assets/dl/revolutionlejeu-regles.pdf;215;1;14;0;30;1;Famille;215;Subverti
+493;Welcome 2;1;100;;107;1;10;0;25;1;Famille;107;Blue Cocker Games
+494;Sushi Roll;2;5;http://www.cocktailgames.com/wp-content/uploads/2019/06/Sushi_Roll_regles_BD.pdf;128;1;8;0;20;1;Famille;128;Cocktail Games
+495;Hanabi Grands Feux;2;5;http://www.cocktailgames.com/wp-content/uploads/2019/07/Hanabi_grands_feux_regles_0419_BD.pdf;128;1;8;0;30;1;Famille;128;Cocktail Games
+496;Portrait Robot;3;6;http://www.cocktailgames.com/wp-content/uploads/2018/10/Portrait_robot_regles_0118_BD.pdf;128;1;10;0;3;1;Famille;128;Cocktail Games
+497;Top Ten;4;9;http://www.cocktailgames.com/wp-content/uploads/2020/01/Top_ten_regles_BD.pdf;128;1;14;0;30;1;Famille;128;Cocktail Games
+502;Mes Premières Énigmes : à Table;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=238;126;1;7;0;45;1;Famille;126;Bioviva
+503;Mes Premières Énigmes : Véhicules;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=238;126;1;7;0;45;1;Famille;126;Bioviva
+504;Énigmes : Sport;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=238;126;1;7;0;45;1;Famille;126;Bioviva
+505;Énigmes : Préhistoire;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=238;126;1;7;0;45;1;Famille;126;Bioviva
+506;Énigmes : Espace;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=238;126;1;7;0;45;1;Famille;126;Bioviva
+507;Défis Nature : Québec;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=216;126;1;7;0;30;1;Famille;126;Bioviva
+508;Défis Nature : Animaux Inséparables;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=216;126;1;7;0;30;1;Famille;126;Bioviva
+509;Défis Nature : Animaux Redoutables;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=216;126;1;7;0;30;1;Famille;126;Bioviva
+510;iKnow;2;6;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwiipNfYwPznAhXtyYUKHabhCi0QFjABegQIAxAB&url=http%3A%2F%2Fwww.tactic.net%2Fsite%2Frules%2FF%2F53955%2520.pdf&usg=AOvVaw1dsnErWwdEsS5vZwkvnWHS;186;1;10;0;90;1;Famille;186;Tactic
+511;Les Papates;0;0;;186;1;0;1;0;1;Famille;186;Tactic
+512;Olem;0;0;;216;1;0;0;0;1;Famille;216;Ludo.tech
+513;Nine;2;4;https://nine.sorryweare.fr/RULES_NINE_240619.pdf;199;1;14;0;30;1;Famille;199;Sorry we are french
+514;Demeter (extension Ganymede);2;4;;199;1;14;1;40;1;Famille;199;Sorry we are french
+517;Flyin' Goblin;2;4;http://iello.fr/regles/Flyin-Goblin_Rulebook_FR.pdf;146;1;8;0;30;1;Famille;146;Iello
+518;Little Town;2;4;https://www.iello.fr/regles/LT_rulebook_FR_light.pdf;146;1;10;0;45;1;Famille;146;Iello
+520;Ishtar : Les jardins de Babylone;2;4;https://www.iello.fr/regles/ISHTAR_aide.pdf;146;1;12;0;45;1;Famille;146;Iello
+521;Highrisk;2;4;http://iello.fr/regles/High_Risk_Rulebook_FR.pdf;146;1;8;0;20;1;Famille;146;Iello
+522;Ninja Academy;3;5;https://www.iello.fr/regles/Ninja%20Academy_rulebook_FR.pdf;146;1;8;0;20;1;Famille;146;Iello
+523;Schotten Totten;2;8;;146;1;8;0;20;1;Famille;146;Iello
+534;Dragon Market;2;4;http://www.blueorangegames.eu/wp-content/uploads/2019/05/DragonMarket-Rules-ML.pdf;104;1;7;0;30;1;Famille;104;Blue Orange
+535;Pappy Winchester;3;5;http://www.blueorangegames.eu/wp-content/uploads/2019/07/PappyWinchester-Rules-ML.pdf;104;1;8;0;40;1;Famille;104;Blue Orange
+536;Valentine's Day;3;6;http://www.blueorangegames.eu/wp-content/uploads/2020/01/ValentinesDay-Rules-FR.pdf;104;1;8;0;15;1;Famille;104;Blue Orange
+537;Villageo;1;1;http://www.blueorangegames.eu/wp-content/uploads/2020/01/Villageo-Rules-FR.pdf;104;1;8;0;0;1;Famille;104;Blue Orange
+538;Kingdomino Duel;2;2;http://www.blueorangegames.eu/wp-content/uploads/2019/06/KingdominoDuel-Rules-FR.pdf;104;1;9;0;20;1;Famille;104;Blue Orange
+539;Hanamikoji;2;2;https://www.happymeeple.com/img/rules/Hanamikoji_Francais_Regles.pdf;146;1;0;0;0;1;Famille;146;Iello
+553;Ligretto;2;4;https://www.schmidtspiele.de/files/Produkte/0/01301%20-%20Ligretto%C2%AE%20rot/01107_Ligretto_DE-FR-ITpdf.pdf;222;1;8;0;10;1;Famille;222;Schmidt Spiele
+554;Encore;1;6;https://www.philibertnet.com/fr/index.php?controller=attachment&id_attachment=2050;222;1;8;0;30;1;Famille;222;Schmidt Spiele
+555;Très futé !;1;4;;222;1;8;0;30;1;Famille;222;Schmidt Spiele
+556;Vraiment très futé !;1;4;;222;1;8;0;30;1;Famille;222;Schmidt Spiele
+557;Dizzle;1;4;https://regle.jeuxsoc.fr/dizzl_rg.pdf;222;1;8;0;30;1;Famille;222;Schmidt Spiele
+558;Encore et encore;0;0;;222;1;0;0;0;1;Famille;222;Schmidt Spiele
+559;Les Tavernes de la Vallée Profonde;2;4;https://www.philibertnet.com/fr/index.php?controller=attachment&id_attachment=3536;222;1;10;0;90;1;Famille;222;Schmidt Spiele
+560;HiLo;2;6;https://www.youtube.com/watch?v=ZDmddSsy8b4&feature=emb_logo;222;1;8;0;30;1;Famille;222;Schmidt Spiele
+561;L'Arbre à Souris;2;4;;222;1;5;0;10;1;Famille;222;Schmidt Spiele
+562;Les Charlatans de Belcastel;2;4;;222;1;10;0;45;1;Famille;222;Schmidt Spiele
+575;Paris New Eden;2;4;;153;1;10;0;45;1;Famille;153;Matagot
+576;Fish n'Chips;0;0;https://regle.jeuxsoc.fr/fishc_rg.pdf;223;1;0;0;0;1;Famille;223;Studio H
+577;Hagakure;3;5;;223;1;10;0;30;1;Famille;223;Studio H
+579;Oriflamme;3;5;;223;1;10;0;30;1;Famille;223;Studio H
+581;Wild Space;1;5;http://catchupgames.com/media/wildspace/wildspace_regles_fr.pdf;130;1;10;0;30;1;Famille;130;Catch Up Games
+582;Affinity + extension sensuelle;3;8;http://www.game-flow.fr/assets/image/GameOut/affinitySensuelle/Rules_Kinky_WEB.pdf;127;1;14;0;20;1;Famille;127;Game Flow
+590;[kosmopoli:t];4;8;https://www.jeux-opla.fr/wp-content/uploads/OPLA-Kosmo-rules.pdf;116;1;10;0;6;1;Famille;116;Jeux Opla
+593;Kami;2;4;https://okaluda.fr/download/kami-regles-du-jeu/?wpdmdl=1369&refresh=5e5d5c53050f71583176787;212;1;8;0;20;1;Famille;212;Oka Luda
+595;Dreamscape;1;4;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=178;225;1;12;0;30;1;Famille;225;Sylex Edition
+596;Loser;3;6;;207;1;8;0;20;1;Famille;207;Lifestyle boardgames
+597;Magic Maze on Mars;1;6;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=183;174;1;7;0;15;1;Famille;174;Sit Down!
+600;Palm reader;4;10;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=181;174;1;6;0;15;1;Famille;174;Sit Down!
+601;Punto;2;8;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=182;226;1;7;0;20;1;Famille;226;Game Factory
+602;Space Bowl;2;8;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=185;174;1;8;0;30;1;Famille;174;Sit Down!
+603;TEAM3;3;6;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=189;176;1;8;0;30;1;Famille;176;Brain Games
+608;Candy Lab (avant-première);0;0;;229;1;0;0;0;1;Famille;229;Funny Fox
+613;Mystery House;1;5;;138;1;12;0;60;1;Famille;138;Gigamic
+614;Quantik;2;2;https://www.gigamic.com/files/catalog/products/rules/gigamic_quantik_rules-inner_06-2019_update2.pdf;138;1;8;0;15;1;Famille;138;Gigamic
+617;Patchwork;2;2;;122;1;8;0;30;1;Famille;122;Fun Forge
+618;Mandala;2;2;;122;1;10;0;20;1;Famille;122;Fun Forge
+619;Agricola Big Box 2 joueurs;2;2;;122;1;13;0;40;1;Famille;122;Fun Forge
+620;Tokaïdo;2;5;;122;1;8;0;45;1;Famille;122;Fun Forge
+622;Kitchen Rush;1;4;https://www.geekattitudegames.com/wp-content/uploads/2019/02/règles-Kitchen-Rush-FR.pdf;143;1;12;0;45;1;Famille;143;Geek Attitude Games
+625;Yozu;0;0;https://drive.google.com/open?id=1NjQhD6DyC7ZNetMA0dQbZXiau5WIyxD0;188;1;0;0;0;1;Famille;188;Capsicum Games
+626;Muse;0;0;https://drive.google.com/open?id=1qPdUvQrqbu4wsCiBBMw2v-Q4hVJzVvQ6;188;1;0;0;0;1;Famille;188;Capsicum Games
+627;Colt Super Express;3;7;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwjy962YvPznAhVIKBoKHY9oDxoQFjABegQIAhAB&url=https%3A%2F%2Fcdn.1j1ju.com%2Fmedias%2F5c%2F28%2F07-colt-super-express-regle.pdf&usg=AOvVaw188eefxJvcVakAytr20NAl;111;1;7;0;15;1;Famille;111;Ludonaute
+629;What's Missing;3;6;https://www.data.ludonaute.fr/WhatsMissing/FR_WHATSMISSING_Rules_Final.pdf;111;1;7;0;20;1;Famille;111;Ludonaute
+630;Deep Sea Adventure;2;6;https://youtu.be/u3BsXaSe98c;231;1;8;0;30;1;Famille;231;Oink Games
+631;Insider;4;8;https://youtu.be/pddPhjkSBLI;231;1;9;0;25;1;Famille;231;Oink Games
+635;Bärenpark;2;4;https://regle.jeuxsoc.fr/bpark_rg.pdf;122;1;8;0;45;1;Famille;122;Fun Forge
+638;Welcome to new Las Vegas;1;50;;107;1;10;0;35;1;Famille;107;Blue Cocker Games
+639;Drakatak;1;4;;200;1;8;0;30;1;Famille;200;Bragelonne
+640;Nightmarium;2;5;Enlever les aide de jeu qui comportent une erreur et imprimer les remplacements pour la règle;200;1;10;0;30;1;Famille;200;Bragelonne
+644;Mr Jack London;2;2;https://www.letempledujeu.fr/IMG/pdf/mr_jack-2.pdf;145;1;9;0;30;1;Famille;145;Hurrican Edition
+645;Gold River;2;5;https://youtu.be/vtmVw4CDuYs;151;1;8;0;35;1;Famille;151;Lumberjack
+646;Monster Café;2;5;https://youtu.be/vtmVw4CDuYs;151;1;8;0;15;1;Famille;151;Lumberjack
+647;Défis nature : Le Grand Jeu;2;6;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=106;126;1;7;0;30;1;Famille;126;Bioviva
+648;Enigmes : Le Grand Jeu;2;8;;126;1;7;0;30;1;Famille;126;Bioviva
+649;Queenz;2;4;;233;1;8;0;60;1;Famille;233;Mandoo Games
+651;Skyjo;2;8;;234;1;8;0;30;1;Famille;234;Magilano
+652;Detective Club;4;8;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjPrcijvvznAhURtRoKHaMVAX8QFjAAegQIARAB&url=https%3A%2F%2Fcdn.1j1ju.com%2Fmedias%2Fb6%2F27%2F78-detective-club-regle.pdf&usg=AOvVaw2n4jcWLSlrnZbSRPjtFmVU;235;1;8;0;45;1;Famille;235;I{Cœur}Games
+654;L'Île de Pan;2;4;https://www.dropbox.com/s/5c3n7ijme7joj51/Livret%20de%20Règles%20VFR%20v1.pdf?dl=0;151;1;8;0;30;1;Famille;151;Lumberjack
+655;La vallée des marchands : la guilde des commerçant;2;4;https://www.bragelonne.games/wp-content/uploads/ressources/La-Vallee-des-Marchands-regles-v1.pdf;200;1;12;0;30;1;Famille;200;Bragelonne
+656;Perplexus;1;1;;221;1;8;0;0;1;Famille;221;Spin Master
+657;Santorini;2;4;;221;1;8;0;20;1;Famille;221;Spin Master
+659;Via Magica;2;6;;145;1;8;1;30;1;Famille;145;Hurrican Edition
+660;Carcassonne;2;5;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwiW6J3Uu_znAhUJUhoKHaRMCTEQFjAAegQIAxAB&url=https%3A%2F%2Fwww.jeuxavolonte.asso.fr%2Fregles%2Fcarcassonne.pdf&usg=AOvVaw2dMLdXwOarnb1m2VeIErT_;179;1;7;0;45;1;Famille;179;Z-Man Games
+662;Catan;3;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwi2j_T2u_znAhVHOhoKHdxcAyUQFjAAegQIBBAB&url=https%3A%2F%2Fludos.brussels%2Fludo-cocof%2Fopac_css%2Fdoc_num.php%3Fexplnum_id%3D318&usg=AOvVaw1USm9l_2UXfwIwla9g8x44;237;1;10;0;90;1;Famille;237;Kosmos
+663;Hadara;2;5;https://www.youtube.com/watch?time_continue=5&v=PBc-g9LGwHY&feature=emb_logo;179;1;10;0;60;1;Famille;179;Z-Man Games
+664;Pirates under fire;2;2;;238;1;0;0;0;1;Famille;238;Explor8
+666;Fou Fou Fou;3;8;;239;1;8;0;15;1;Famille;239;KYF Editions
+668;Minecraft;2;4;https://www.ravensburger.fr/spielanleitungen/ecm/Spielanleitungen/26132%20Anl%201948950.pdf?ossl=pds_text_Spielanleitung;161;1;8;0;45;1;Famille;161;Ravensburger
+685;Papillon;2;4;;153;1;14;0;45;1;Famille;153;Matagot
+686;Color Addict Fruity;2;6;http://videoregles.net/videoregle/color-addict;197;1;7;0;15;1;Famille;197;Cartamundi
+85;Cortex Challenge;2;6;https://fr.asmodee.com/fr/games/cortex-challenge/;125;2;8;0;15;2;Ambiance;125;Captain Macaque
+86;Cortex² Challenge;2;6;;125;2;8;0;15;2;Ambiance;125;Captain Macaque
+87;Cortex Challenge KIDS;2;6;http://captain-macaque.com/pdf/Cortex%C2%B2_Kids_Rulebook.pdf;125;2;6;0;15;2;Ambiance;125;Captain Macaque
+88;Cortex² Challenge Kids;2;6;http://captain-macaque.com/pdf/Cortex%C2%B2_Kids_Rulebook.pdf;125;2;6;0;15;2;Ambiance;125;Captain Macaque
+113;Trôl;2;5;http://regle.jeuxsoc.fr/trols_rg.pdf;167;2;10;0;30;2;Ambiance;167;Sweet November
+114;Zombie bus;0;0;http://www.pixiegames.fr/index.php?controller=attachment&id_attachment=73;167;2;0;1;0;2;Ambiance;167;Sweet November
+135;Exploding Kittens;2;5;;100;2;7;0;20;2;Ambiance;100;Asmodee
+167;When I Dream;4;8;http://www.whenidream.net/files/rules/WhenIDream-Rules-FR.pdf;162;2;10;0;30;2;Ambiance;162;Repos Prod
+168;Secrets;4;8;;162;2;10;0;20;2;Ambiance;162;Repos Prod
+169;Concept;4;12;http://www.concept-the-game.com/concept/files/rules/CONCEPT-RULES-FR.pdf;162;2;10;0;40;2;Ambiance;162;Repos Prod
+175;Twin-It;2;6;http://www.cocktailgames.com/wp-content/uploads/2018/11/Re%CC%80gles_Twin_It_1118_BD.pdf;128;2;6;0;15;2;Ambiance;128;Cocktail Games
+176;Pikto;3;6;;128;2;12;0;30;2;Ambiance;128;Cocktail Games
+177;Face de bouc;2;7;;128;2;6;0;15;2;Ambiance;128;Cocktail Games
+178;Jetlag;3;8;;128;2;12;0;30;2;Ambiance;128;Cocktail Games
+179;Imagine (version xxl);3;8;;128;2;12;0;30;2;Ambiance;128;Cocktail Games
+180;Profiler (version xxl);3;8;;128;2;12;0;30;2;Ambiance;128;Cocktail Games
+243;Galerapagos (+ extension);3;12;https://www.gigamic.com/files/catalog/products/rules/gigamic_galerapagos_rules_fr_04-2017-web.pdf;138;2;10;0;20;2;Ambiance;138;Gigamic
+265;Kikafé?;0;0;http://www.blueorangegames.eu/wp-content/uploads/2018/05/KIKAFE_rules_FR.pdf;104;2;0;0;0;2;Ambiance;104;Blue Orange
+279;Sushi Go!;2;5;;128;2;8;0;15;2;Ambiance;128;Cocktail Games
+281;Fluxx;2;6;;142;2;8;0;20;2;Ambiance;142;Edge
+285;Jungle Speed;2;10;;100;2;7;0;20;2;Ambiance;100;Asmodee
+287;Jungle Speed Skwak;2;10;;100;2;8;0;30;2;Ambiance;100;Asmodee
+297;Débats Débiles;5;10;Non trouvée;119;2;14;0;25;2;Ambiance;119;Le Droit de Perdre
+298;Questions de merde;3;6;;119;2;16;0;15;2;Ambiance;119;Le Droit de Perdre
+304;Les Gens Qui,;0;0;chouic.com/les-gens-qui/;190;2;0;1;0;2;Ambiance;190;Chouic
+316;Culot;2;20;;190;2;16;0;30;2;Ambiance;190;Chouic
+329;Color Addict;2;6;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwj_uruUvLbgAhWizYUKHVQdDp4QFjAAegQICRAC&url=https%3A%2F%2Fludos.brussels%2Fludo-cocof%2Fopac_css%2Fdoc_num.php%3Fexplnum_id%3D842&usg=AOvVaw3wyb4-0X06fcYa3BsDQXPc;197;2;7;0;15;2;Ambiance;197;Cartamundi
+341;Cortex +;2;6;http://captain-macaque.com/pdf/Rulebook_Cortex+.pdf;125;2;8;0;15;2;Ambiance;125;Captain Macaque
+377;Just One;3;7;http://justone-the-game.com/index.php#download;162;2;8;0;20;2;Ambiance;162;Repos Prod
+380;Dany;3;8;https://dl.dropboxusercontent.com/apitl/1/AAD4JNWgb4l5KK_fHeNhhtp3xaOWR_VRJZEvYwAecmp-iPAXUFLoDdKXKtSPpf3SHOyH_UwO-9GCCvot2YDzgXWMiZDfemEHa03kR83StySk45Lxo70ZoruAqSVGZLw-5PAMG1jFhzIAgx5WXTAwdAH7r_ja54xdZBCAwZwp76gynhjVeC95uYk2rFBjcrOHH0PVd77TkKVDzHPW3wALaGBw5Bvj9YH8IVHsAuRWnrgwBteHbOMK97TQKiOVpKbi1YsH1t-Y19_EZIRpzO7AXEydFfyYcRcJkxTMCDKHTmcJSpZodLCcxdyAOGYhBBaZwCg;206;2;16;0;30;2;Ambiance;206;Grrre Games
+384;Abra Kazam;3;8;https://dl.dropboxusercontent.com/apitl/1/AACN7Rb7qnJWw5YTspNUvaqHZ7gVDu_lMAXW5IuUub2RLBMvbtfoeMdPCMMO4T_bgH8y5leLhUfEUodlPeGwZu4sYT8IWlceriPzm6O5FH2cjhu7RzASAms5bzdXYxv33Nn2oJe_hd9rsdcEN2AFukUfjaRH59yVYA6b6z_2Y5_0y-9ds1szmiZrZdRuAXAEHS7nn6SpG1Uie_3FifwWh9X5RNOAqV3SmbDxcXoi2iWWlano1mhvfh3WpoaCaQRAtUkSiAxEl8RPDtRTUYS3Qz79QM5NuPZ41ELJrcL7ShX9mUmg58KroSOGTi4xU0N7tM8;187;2;7;0;15;2;Ambiance;187;Buzzy Games
+385;Cerbère;3;7;https://www.laboitedejeu.fr/wp-content/uploads/2018/08/Cerbere-FR-rules-lowdef.pdf;149;2;10;0;45;2;Ambiance;149;La Boite de Jeu
+396;Boss Quest;0;0;https://debacle.fr/project/boss-quest/;208;2;0;0;0;2;Ambiance;208;Débacle jeux
+430;Bahamas;4;8;https://www.matagot.com/data/atasamente/BAH_Rules_FR.pdf;153;2;10;0;30;2;Ambiance;153;Matagot
+443;Rumble in the Dungeon;3;6;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=8;211;2;8;0;20;2;Ambiance;211;Flatlined Games
+444;Rumble in the House;3;6;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=7;211;2;8;0;20;2;Ambiance;211;Flatlined Games
+455;Smile Life;2;6;https://www.smilelife.fr/regles;214;2;12;0;20;2;Ambiance;214;Smile Life
+498;Crazy Theory;3;6;https://www.ledroitdeperdre.com/download/CTH-regles.pdf;119;2;14;0;30;2;Ambiance;119;Le Droit de Perdre
+499;Géants stupides (avant-première);0;0;;119;2;0;0;0;2;Ambiance;119;Le Droit de Perdre
+500;Kiki va sortir les poubelles (avant-première);3;8;;119;2;12;1;15;2;Ambiance;119;Le Droit de Perdre
+501;I am a banane (avant-première);0;0;;119;2;0;1;0;2;Ambiance;119;Le Droit de Perdre
+515;Fiesta de los Muertos;4;8;http://oldchap.games/wp-content/uploads/2019/10/FDLM_manuel.pdf;117;2;12;0;15;2;Ambiance;117;Old Chap
+519;Break the Code;2;4;http://iello.fr/regles/BTC_rulebook_FR.pdf;146;2;10;0;15;2;Ambiance;146;Iello
+524;Hades Trap;2;4;https://www.youtube.com/watch?time_continue=7&v=4pT-vaIJCSM&feature=emb_logo;208;2;10;1;30;2;Ambiance;208;Débacle jeux
+525;Monkey Klash;3;5;;208;2;8;1;15;2;Ambiance;208;Débacle jeux
+592;Poule poule;2;8;;212;2;8;0;20;2;Ambiance;212;Oka Luda
+607;Monster Rush;2;8;https://funnyfox.fr/wp-content/uploads/sites/21/2019/06/MonsterRush-Livret-web.pdf;229;2;8;0;10;2;Ambiance;229;Funny Fox
+611;Salade 2 Points;2;6;https://www.gigamic.com/files/catalog/products/rules/gigamic_point-salad_rules_web.pdf;138;2;8;0;20;2;Ambiance;138;Gigamic
+612;Lama;2;6;https://www.gigamic.com/files/catalog/products/rules/gigamic_lama_rules_11-2019_web.pdf;138;2;8;0;20;2;Ambiance;138;Gigamic
+615;Color Addict Apéro;2;6;;197;2;18;0;15;2;Ambiance;197;Cartamundi
+643;Cuistot Fury;2;9;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwiTqJPGvPznAhUD8BoKHfSfD_0QFjAAegQIAhAB&url=https%3A%2F%2Fludovox.fr%2Fwp-content%2Fuploads%2Fressources%2FRExCuistotFuryFR.pdf&usg=AOvVaw1YmlkuXplwixhaRZlj4kFI;232;2;7;0;15;2;Ambiance;232;Ludiconcept
+683;Taco Chat Bouc Cheeze Pizza !;2;8;;104;2;8;0;10;2;Ambiance;104;Blue Orange
+684;Rythme and Boulet Replay (LSF);4;12;http://www.cocktailgames.com/wp-content/uploads/2019/08/Rythme_and_Boulet_LSF_regles_0819_BD.pdf;128;2;10;0;15;2;Ambiance;128;Cocktail Games
+115;Seeders from Sereis - Episode 1 : Exodus;2;4;;167;3;14;0;120;3;Expert;167;Sweet November
+158;Explorateurs de la mer du Nord;1;4;;160;3;12;0;90;3;Expert;160;Pixie Games
+161;Altiplano;2;5;;160;3;12;0;90;3;Expert;160;Pixie Games
+165;Pelegrinus;0;0;;101;3;0;1;0;3;Expert;101;Asyncron
+166;Guédelon;1;4;;101;3;7;0;60;3;Expert;101;Asyncron
+170;7 Wonders;2;7;http://rprod.com/uploads/file/7WONDERS_RULES_FR_COLOR.pdf;162;3;10;0;30;3;Expert;162;Repos Prod
+171;7 Wonders Duel + Pantheon;2;0;;162;3;10;0;30;3;Expert;162;Repos Prod
+172;Amun-Re le jeu de carte;2;5;http://www.supermeeple.com/wp-content/uploads/2017/09/arcg-fr-rules-180x180.pdf;136;3;12;0;45;3;Expert;136;Super Meeple
+173;Tikal;2;4;;136;3;10;0;90;3;Expert;136;Super Meeple
+174;Mafiozoo;2;4;;136;3;12;0;60;3;Expert;136;Super Meeple
+181;Terre Pirates;3;6;;172;3;14;0;45;3;Expert;172;Roussignol Editions
+182;Gunny Town;0;0;;172;3;0;1;0;3;Expert;172;Roussignol Editions
+226;Wendake;1;4;;102;3;14;0;120;3;Expert;102;Atalia
+230;Viking Gone Wild + Ext;2;4;;175;3;10;0;60;3;Expert;175;Lucky Duck Games
+246;Otys;2;4;;158;3;14;0;60;3;Expert;158;Pearl Games
+247;L'Auberge Sanglante + Les Forains;1;4;;158;3;14;0;60;3;Expert;158;Pearl Games
+263;Auztralia ;2;4;;177;3;14;1;120;3;Expert;177;Nut’s Publishing 
+264;One Deck Dungeon;2;0;http://www.nutspublishing.com/eshop/doc/odd/OneDeckDungeon_Rules1.61_french.pdf;177;3;12;0;30;3;Expert;177;Nut’s Publishing 
+275;Runewars le jeu de figurines;2;0;;178;3;14;0;90;3;Expert;178;Fantasy Flight Games
+337;Cuzco;2;4;http://www.supermeeple.com/wp-content/uploads/2015/02/CUZCO-Rules-FR.pdf;136;3;12;0;120;3;Expert;136;Super Meeple
+340;Save the Meeple;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&cad=rja&uact=8&ved=2ahUKEwi-lL-rh7bnAhVKzBoKHeUJCWYQFjAJegQIAhAB&url=https%3A%2F%2Fgusandco.net%2Fwp-content%2Fuploads%2F2019%2F11%2Fsave_the_meeples_regles.pdf&usg=AOvVaw3fDoRHrFKIeP9bml_vW1KV;107;3;10;0;44;3;Expert;107;Blue Cocker Games
+354;Forêt des Ombres (ext One Deck Dungeon);1;2;http://asmadigames.com/files/ODD_Rulebook_1.6.pdf;177;3;12;0;30;3;Expert;177;Nut’s Publishing 
+356;La Traque de l'anneau;2;5;http://www.nutspublishing.com/eshop/doc/latraquedelanneau/la_traque_de_l_anneau_regles.pdf;177;3;14;0;90;3;Expert;177;Nut’s Publishing 
+357;Sub Terra;1;6;https://boardgamegeek.com/filepage/155023/sub-terra-rulebook-french;177;3;10;0;90;3;Expert;177;Nut’s Publishing 
+359;Space Gate Odyssey ;2;4;https://www.data.ludonaute.fr/Space_Gate_Odyssey/RULES/Space_Gate_Odyssey_Regles_FR.pdf;111;3;14;0;90;3;Expert;111;Ludonaute
+397;Clank !;2;4;https://www.renegade-france.fr/clank/;168;3;14;0;60;3;Expert;168;Renegade France
+398;Passage secret;2;2;Non dispo ?;168;3;10;0;25;3;Expert;168;Renegade France
+399;Clank ! Dans l'espace !;2;4;https://www.renegade-france.fr/clank-dans-lespace/;168;3;12;0;60;3;Expert;168;Renegade France
+428;Between two Castles;3;7;https://www.matagot.com/data/atasamente/Between_2_Castles_R%C3%A8gles_FR.pdf;153;3;12;0;60;3;Expert;153;Matagot
+431;Sagrada;2;4;https://www.matagot.com/data/atasamente/Sagrada-rules-FR.pdf;153;3;10;0;40;3;Expert;153;Matagot
+436;Nemeton;2;4;http://blam-edition.com/medias/5bb733ad0246e_Rules_Nemeton_FR_1.8.7_light.pdf;135;3;12;0;75;3;Expert;135;Blam!
+437;Last Heroes;3;5;https://www.ludonaute.fr/portfolio/last-heroes/;111;3;14;0;45;3;Expert;111;Ludonaute
+439;Bad Bones;1;6;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=171;174;3;8;0;30;3;Expert;174;Sit Down!
+445;La petite mort;2;4;https://lumberjacks-studio.com/wp-content/uploads/2018/11/LPM-FR-web.pdf;151;3;14;0;20;3;Expert;151;Lumberjack
+446;Samsara;1;5;http://www.pixiegames.fr/index.php?controller=attachment&id_attachment=102;212;3;12;0;50;3;Expert;212;Oka Luda
+447;Burgle Bros;1;4;https://www.youtube.com/watch?v=mXBkQoL-cbU;160;3;12;0;90;3;Expert;160;Pixie Games
+448;Fugitive;2;2;;160;3;10;0;25;3;Expert;160;Pixie Games
+450;Architectes des royaumes de l'ouest;1;5;http://www.pixiegames.fr/index.php?controller=attachment&id_attachment=111;160;3;12;0;80;3;Expert;160;Pixie Games
+452;Joraku;3;4;;177;3;14;0;60;3;Expert;177;Nut’s Publishing 
+453;Inflexibles: Normandie;1;2;;177;3;14;1;60;3;Expert;177;Nut’s Publishing 
+454;Last Bastion;1;4;https://www.lastbastion-game.com/files/RULES/LAB_Rules_FR.pdf;162;3;10;0;45;3;Expert;162;Repos Prod
+486;Caylus 1303;2;5;https://017aae6e-7d2b-4a50-9dfc-d78eced3774e.filesusr.com/ugd/59baa2_1011aba7d7ac4267920c5d8aadf88d24.pdf;165;3;12;0;90;3;Expert;165;Space Cowboy
+492;Save the Meeple surdimensionné;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&cad=rja&uact=8&ved=2ahUKEwi-lL-rh7bnAhVKzBoKHeUJCWYQFjAJegQIAhAB&url=https%3A%2F%2Fgusandco.net%2Fwp-content%2Fuploads%2F2019%2F11%2Fsave_the_meeples_regles.pdf&usg=AOvVaw3fDoRHrFKIeP9bml_vW1KV;107;3;10;0;45;3;Expert;107;Blue Cocker Games
+563;Black Angel;1;4;https://pearlgames.be/wp-content/uploads/2019/11/Black-Angel-Rules-V4_FR_LD.pdf;158;3;12;0;90;3;Expert;158;Pearl Games
+578;Alubari;1;5;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&ved=2ahUKEwiF1v75uPznAhVBxIUKHezXDLYQFjAIegQIAhAB&url=https%3A%2F%2Fcdn.1j1ju.com%2Fmedias%2Fce%2Fee%2F17-alubari-a-nice-cup-of-tea-regle.pdf&usg=AOvVaw1ymROchK7U3Een46TRdRSh;223;3;14;0;120;3;Expert;223;Studio H
+580;Pharaon;1;5;http://catchupgames.com/media/pharaon/pharaon_regles_fr.pdf;130;3;12;0;60;3;Expert;130;Catch Up Games
+591;Joraku;3;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjg8ervwPznAhUIHxoKHZw_CBcQFjACegQIAhAB&url=https%3A%2F%2Fwww.magicbazar.fr%2Fpdf%2Frules_games%2Fjoraku_regles_fr.pdf&usg=AOvVaw2TU5cSuxmNQm2GSzeScOqp;177;3;14;0;60;3;Expert;177;Nut’s Publishing 
+604;Underwater Cities;1;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&ved=2ahUKEwjEsvi5jtnnAhVHJhoKHT4oCn8QFjAIegQIARAB&url=https%3A%2F%2Fwww.delijeux.com%2Fsites%2Fdefault%2Ffiles%2Ffile_gamerule%2Funderwater-cities.pdf&usg=AOvVaw0JBU-ttV6F0KRML99Skl7R;227;3;12;0;120;3;Expert;227;Delicious games
+616;Rallyman GT;1;6;https://box.bestpractice-publishing.com/f/a7cf0aedff2a405390b8/?dl=1;230;3;8;0;60;3;Expert;230;Holy Grail
+621;Bruxelles 1897;2;4;https://www.geekattitudegames.com/wp-content/uploads/2019/09/règles-FR-1.pdf;143;3;10;0;60;3;Expert;143;Geek Attitude Games
+628;Yggdrasil Chronicles;1;5;https://www.data.ludonaute.fr/YGGDRASIL_Chronicles/RULES/Yggdrasil_Chronicles_Rules_FR.pdf;111;3;14;0;90;3;Expert;111;Ludonaute
+632;Genesia;1;5;http://www.supermeeple.com/wp-content/uploads/2015/02/Genesia-Fr-Rules_compresse.pdf;136;3;12;0;200;3;Expert;136;Super Meeple
+634;Pour une poignée de Meeple;2;4;;136;3;14;0;60;3;Expert;136;Super Meeple
+636;Brass Lancashire;2;4;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwiNvozvuvznAhXGy4UKHVAiDmcQFjAAegQIAxAB&url=https%3A%2F%2Fcdn.1j1ju.com%2Fmedias%2F53%2F6c%2F00-brass-lancashire-regle.pdf&usg=AOvVaw1-NEclU3FOAYxHUCN-1VF1;122;3;14;0;120;3;Expert;122;Fun Forge
+637;Brass Birmingham;2;4;https://cdn.1j1ju.com/medias/96/a1/be-brass-birmingham-regle.pdf;122;3;14;0;120;3;Expert;122;Fun Forge
+641;Magnum Opus;2;5;https://www.bragelonne.games/wp-content/uploads/ressources/Magnum-Opus-regles-VF.V1.0.pdf;200;3;12;0;0;3;Expert;200;Bragelonne
+642;Chtulhu L'avènement;2;2;https://www.bragelonne.games/wp-content/uploads/ressources/Cthulhu-avenement-regles-fr.pdf;200;3;14;0;30;3;Expert;200;Bragelonne
+650;Nidavellir;2;5;https://dl.dropboxusercontent.com/apitl/1/AU2eiDj-kbXbRt35jT30Fu6s2IdrqqHwcFihhYMOif6oDmEgF1p7f4k2FxZNQrantyNqERvaPz6D6-3Cy0VUm7BbbwKzw8ofs3qUxB6JEOQUyqL7bNf_096GxBh2KAr1xxBPsGqDgwmKfmHoLb26W1NE1Ofx95_P0d_8dymKsaXMT-IBCFk99zeLiMiUWDTKuGqJ6g3LUpz1CkKz774grlvS_3fHfzK7qMf6uT4rxiDl8UJA95e6UTaVrrraH_jRnGIXPkvOXJoOI6M00hVoW3PY2vCSK9X2MzteeRIgo-HDLfRFSnzeOGpt1FezEl8Jj1WChgtoj9TK1bugys8-DpyM;206;3;10;0;45;3;Expert;206;Grrre Games
+661;Res Arcana;2;4;;236;3;10;0;60;3;Expert;236;Sand Castle Games
+75;Booum !;2;4;;123;4;6;0;20;4;Enfant;123;Haba
+77;Licornes dans les nuages géant;0;0;;123;4;0;0;0;4;Enfant;123;Haba
+78;Rhino Hero Super Battle;2;4;;123;4;5;0;15;4;Enfant;123;Haba
+79;Kikou le coucou;2;5;;123;4;4;0;15;4;Enfant;123;Haba
+80;Karuba junior;1;4;;123;4;4;0;10;4;Enfant;123;Haba
+81;Trésor de glace;2;4;https://cdn.haba.de/content/medias/manual/303402-funkelschatz-spielanleitung-6s.pdf;123;4;5;0;15;4;Enfant;123;Haba
+89;Farmy Up;2;4;https://www.bioviva.com/fr/index.php?controller=attachment&id_attachment=27;126;4;5;0;20;4;Enfant;126;Bioviva
+183;Anti-virus;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+184;Archipel des dinosaures;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+185;Au voleur;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+186;Cache Cache Jungle;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+187;Forteresse;1;0;;164;4;8;0;0;4;Enfant;164;Smart Games
+188;Pagodes;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+189;Quadrillon;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+190;L'Aventurier;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+191;Butterflies;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+192;Cache-cache Pirates;1;0;;164;4;5;0;0;4;Enfant;164;Smart Games
+193;Lièvres et renards;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+194;La Nuit des Fantômes;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+195;Parking Tournis;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+196;Les Pingouins patineurs;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+197;Les 3 petits cochons;1;0;;164;4;3;0;0;4;Enfant;164;Smart Games
+198;Bahuts malins;1;0;;164;4;3;0;0;4;Enfant;164;Smart Games
+199;Blanche-neige;1;0;;164;4;4;0;0;4;Enfant;164;Smart Games
+200;Camelot Jr;1;0;;164;4;4;0;0;4;Enfant;164;Smart Games
+201;Chateau logique;1;0;;164;4;3;0;0;4;Enfant;164;Smart Games
+202;Le Petit Chaperon Rouge;1;0;;164;4;4;0;0;4;Enfant;164;Smart Games
+203;Smart Car 5x5;1;0;;164;4;4;0;0;4;Enfant;164;Smart Games
+204;IQ-Blox;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+205;IQ-Fit;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+206;IQ-Focus;1;0;;164;4;8;0;0;4;Enfant;164;Smart Games
+207;IQ-Link;1;0;;164;4;8;0;0;4;Enfant;164;Smart Games
+208;IQ-Puzzler;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+209;IQ-Twist;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+210;IQ XOXO;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+211;Arche de Noé;1;0;;164;4;5;0;0;4;Enfant;164;Smart Games
+212;Forêt enchantée;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+213;Gruyère party;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+214;Insectes en folie;1;0;;164;4;7;0;0;4;Enfant;164;Smart Games
+215;La Marche des Pinguoins;1;0;;164;4;5;0;0;4;Enfant;164;Smart Games
+216;La Mare aux canards;1;0;;164;4;6;0;0;4;Enfant;164;Smart Games
+217;Le Monde Aquatique;1;0;;164;4;5;0;0;4;Enfant;164;Smart Games
+218;Geosmart;1;0;;164;4;3;0;0;4;Enfant;164;Smart Games
+229;Magic Maze Kids;2;4;;174;4;5;0;15;4;Enfant;174;Sit Down!
+249;Folanimo;2;4;http://www.djeco.com/data/rules/DJ08465_FR.pdf;133;4;4;0;15;4;Enfant;133;Djeco
+250;Niwa;2;0;http://www.djeco.com/data/rules/DJ08489_FR.pdf;133;4;7;0;15;4;Enfant;133;Djeco
+251;Animouv;2;4;http://www.djeco.com/data/rules/DJ08446_FR.pdf;133;4;7;0;20;4;Enfant;133;Djeco
+252;Archichato;2;0;http://www.djeco.com/data/rules/DJ08442_FR.pdf;133;4;6;0;0;4;Enfant;133;Djeco
+268;Gare à la toile;2;4;;138;4;6;0;20;4;Enfant;138;Gigamic
+269;La chasse aux monstres;1;5;;129;4;4;0;10;4;Enfant;129;Scorpion Masqué
+270;MonstruYeux;2;6;;129;4;5;0;10;4;Enfant;129;Scorpion Masqué
+286;Jungle Speed Kids;2;10;Non trouvée;100;4;4;0;30;4;Enfant;100;Asmodee
+330;Big Bug Panic;2;5;http://www.ludism.fr/ludism_download.php?id=13292;197;4;6;0;15;4;Enfant;197;Cartamundi
+331;MimiQ Body;2;6;Non trouvée;197;4;4;0;15;4;Enfant;197;Cartamundi
+332;Jack le Pirate;2;4;Non trouvée;197;4;6;0;15;4;Enfant;197;Cartamundi
+334;Gold Armada;2;5;Non trouvée;186;4;6;0;30;4;Enfant;186;Tactic
+336;Les aventuriers de la jungle;2;4;Non trouvée;186;4;5;0;20;4;Enfant;186;Tactic
+343;Escargot... Prêts ? Partez !;2;4;https://cdn.haba.de/content/medias/manual/304026-schneck-di-wupp-spielanleitung-6s.pdf;123;4;5;0;15;4;Enfant;123;Haba
+345;Le Verger (version XL);1;8;https://cdn.haba.de/content/medias/manual/3170-le-verger-fiche-jeu-fr.pdf;123;4;3;0;10;4;Enfant;123;Haba
+346;Hop ! Hop ! Galopons !;2;4;https://cdn.haba.de/content/medias/manual/4321-hoppe-reiter-spielanleitung-6s.pdf;123;4;10;0;12;4;Enfant;123;Haba
+349;Abella l'Abeille;1;4;https://cdn.haba.de/content/medias/manual/301838-mes-hanni-honigbiene-spielanleitung-6s.pdf;123;4;2;0;10;4;Enfant;123;Haba
+361;Zombie Kidz Evolution;2;4;https://www.scorpionmasque.com/sites/scorpionmasque.com/files/zk_fr_rules_25sept2018.pdf;129;4;7;0;15;4;Enfant;129;Scorpion Masqué
+369;Monsieur Carrousel;1;6;https://www.iello.fr/download/Rulebook-MrCarrousel.pdf;228;4;4;0;15;4;Enfant;228;Loki
+372;Troll & Dragon;1;4;https://www.iello.fr/regles/TrolletDragon.pdf;146;4;7;0;25;4;Enfant;146;Iello
+374;Alerte ! Astéroïdes;1;1;https://www.smartgames.eu/fr/jeux-pour-1-joueur/alerte-ast%C3%A9ro%C3%AFdes;164;4;8;0;10;4;Enfant;164;Smart Games
+375;Cache Noisettes !;1;1;https://www.smartgames.eu/fr/jeux-pour-1-joueur/cache-noisettes;164;4;6;0;10;4;Enfant;164;Smart Games
+376;La Belle au Bois Dormant;1;1;https://www.smartgames.eu/fr/jeux-pour-1-joueur/la-belle-au-bois-dormant;164;4;3;0;10;4;Enfant;164;Smart Games
+378;Concept Kids Animaux;2;12;http://www.concept-the-game.com/concept-kids/files/rules/CKA-FR01_RULES.pdf;162;4;4;0;20;4;Enfant;162;Repos Prod
+394;Mr Wolf;1;4;http://www.blueorangegames.eu/wp-content/uploads/2018/03/MrWolf_rules_ML.pdf;104;4;4;0;15;4;Enfant;104;Blue Orange
+395;Oh my Gold!;2;4;http://www.blueorangegames.eu/wp-content/uploads/2019/02/OhMyGold-Rules-FR.pdf;104;4;5;0;10;4;Enfant;104;Blue Orange
+418;Little Action;2;4;http://www.djeco.com/data/rules/DJ08557_FR.pdf;133;4;2;0;10;4;Enfant;133;Djeco
+419;Savanimo;2;4;http://www.djeco.com/data/rules/DJ08403_FR.pdf;133;4;5;0;10;4;Enfant;133;Djeco
+420;Batasaurus;2;4;http://www.djeco.com/data/rules/DJ05136_FR.pdf;133;4;5;0;15;4;Enfant;133;Djeco
+421;Sardines;2;4;http://www.djeco.com/data/rules/DJ05161_FR.pdf;133;4;5;0;15;4;Enfant;133;Djeco
+422;Batamiaou;2;4;Non trouvée sur http://www.djeco.com/fr/games-toys;133;4;5;0;15;4;Enfant;133;Djeco
+423;Wonderzoo;2;4;http://www.djeco.com/data/rules/DJ08402_FR.pdf;133;4;7;0;20;4;Enfant;133;Djeco
+424;Twisty;2;4;http://www.djeco.com/data/rules/DJ08404_FR.pdf;133;4;8;0;25;4;Enfant;133;Djeco
+425;Savana;2;4;http://www.djeco.com/fr/games-toys;133;4;8;0;20;4;Enfant;133;Djeco
+426;Woolfy;2;4;http://www.djeco.com/data/rules/DJ08427_FR.pdf;133;4;5;0;15;4;Enfant;133;Djeco
+427;Little Collect;2;2;http://www.djeco.com/data/rules/DJ08558_FR.pdf;133;4;2;0;10;4;Enfant;133;Djeco
+487;Attrape Rêves;2;4;https://4e0f8ff3-4d4f-443b-bcf4-8ad1a6a61755.filesusr.com/ugd/59baa2_0a2f9bb7c1754eb8ae8a4adcd4f24f12.pdf;165;4;4;0;15;4;Enfant;165;Space Cowboy
+488;Yum Yum Island;2;5;https://4e0f8ff3-4d4f-443b-bcf4-8ad1a6a61755.filesusr.com/ugd/59baa2_d911debde9c04d45ba8b23c7ec2680e2.pdf;165;4;6;0;20;4;Enfant;165;Space Cowboy
+516;Kraken Attack;1;4;http://iello.fr/regles/Rulebook_Kraken-Attack.pdf;228;4;7;0;25;4;Enfant;228;Loki
+526;Potomac;2;4;http://www.djeco.com/data/rules/DJ08407_FR.pdf;133;4;6;0;15;4;Enfant;133;Djeco
+527;Kipicot;2;4;http://www.djeco.com/data/rules/DJ08547_FR.pdf;133;4;7;0;30;4;Enfant;133;Djeco
+528;Gloutons;2;4;http://www.djeco.com/data/rules/DJ08411_FR.pdf;133;4;5;0;15;4;Enfant;133;Djeco
+529;Cadomino;2;6;http://www.djeco.com/data/rules/DJ08549_FR.pdf;133;4;5;0;20;4;Enfant;133;Djeco
+530;Magic School;1;6;http://www.djeco.com/data/rules/DJ05144_FR.pdf;133;4;5;0;20;4;Enfant;133;Djeco
+531;Mistigriff;2;5;http://www.djeco.com/data/rules/DJ05142_FR.pdf;133;4;5;0;20;4;Enfant;133;Djeco
+532;Hero Town;2;4;http://www.djeco.com/data/rules/DJ05143_FR.pdf;133;4;6;0;20;4;Enfant;133;Djeco
+533;Forest Aventure;2;4;http://www.djeco.com/data/rules/DJ05180_FR.pdf;133;4;6;0;20;4;Enfant;133;Djeco
+540;Zoo Run;1;5;https://www.iello.fr/download/Zoorun-rulebook-zfold-FR_light.pdf;228;4;4;0;19;4;Enfant;228;Loki
+542;La Vallée des Vikings;2;4;https://cdn.haba.de/content/medias/manual/304697-tal-der-wikinger-spielanleitung-6s.pdf;123;4;6;0;20;4;Enfant;123;Haba
+543;La Potion des Sorciers;2;4;https://cdn.haba.de/content/medias/manual/305216-wunderkessel-spielanleitung-6s.pdf;123;4;5;0;20;4;Enfant;123;Haba
+544;Froggie;2;4;https://cdn.haba.de/content/medias/manual/305272-wetthuepfen-spielanleitung-6s.pdf;123;4;3;0;15;4;Enfant;123;Haba
+545;Au Chantier;1;4;https://cdn.haba.de/content/medias/manual/305211-meine-ersten-spiele-baustelle-spielanleitung-6s.pdf;123;4;2;0;10;4;Enfant;123;Haba
+546;Mon Premier Verger;1;4;https://cdn.haba.de/content/medias/manual/3177-first-orchard-instructions-5s.pdf;123;4;2;0;10;4;Enfant;123;Haba
+547;Miyabi;2;4;https://cdn.haba.de/content/medias/manual/305249-miyabi-regle-du-jeu-fr.pdf;123;4;8;0;45;4;Enfant;123;Haba
+548;Le Club des Moustaches;2;4;https://cdn.haba.de/content/medias/manual/305278-le-club-des-moustaches-regle-du-jeu-fr.pdf;123;4;7;0;20;4;Enfant;123;Haba
+549;Dés Express;2;6;https://cdn.haba.de/content/medias/manual/305293-des-express-regle-du-jeu-fr.pdf;123;4;8;0;10;4;Enfant;123;Haba
+550;Penta-Rush;1;4;https://cdn.haba.de/content/medias/manual/305284-penta-rush-regle-du-jeu-fr.pdf;123;4;7;0;20;4;Enfant;123;Haba
+551;Licornes dans les nuages – Nuages magiques;1;4;https://cdn.haba.de/content/medias/manual/304539-einhorn-glitzergl%C3%BCck-wolkenstapelei-spielanleitung-6s.pdf;123;4;4;0;15;4;Enfant;123;Haba
+552;Monza;2;6;https://cdn.haba.de/content/medias/manual/4416-monza-spielanleitung-7s.pdf;123;4;5;0;10;4;Enfant;123;Haba
+583;Ma première aventure : Voyage en terre ocre;0;0;;127;4;0;0;15;4;Enfant;127;Game Flow
+584;Ma première aventure : La découverte de l'Atlantid;0;0;;127;4;0;0;0;4;Enfant;127;Game Flow
+585;Ma première aventure : L'odyssée du Phobos;0;0;;127;4;0;0;0;4;Enfant;127;Game Flow
+586;Ma première aventure : en quête du dragon;0;0;;127;4;0;0;0;4;Enfant;127;Game Flow
+588;Le bois des Couadsous;2;4;https://www.jeux-opla.fr/wp-content/uploads/Le-Bois-des-Couadsous-english-rules.pdf;116;4;6;0;10;4;Enfant;116;Jeux Opla
+589;Le Bois des Coua2sous;2;4;https://www.jeux-opla.fr/wp-content/uploads/Le-Bois-des-Couadsous-english-rules.pdf;116;4;6;0;10;4;Enfant;116;Jeux Opla
+599;Nom d'un Renard!;2;4;https://www.atalia-jeux.com/index.php?controller=attachment&id_attachment=149;226;4;5;0;15;4;Enfant;226;Game Factory
+609;Le Roi Sommeil;2;5;https://www.gigamic.com/files/catalog/products/rules/gigamic_le-roi-sommeil_rules_02-2019_web.pdf;138;4;4;0;15;4;Enfant;138;Gigamic
+610;Roulapik;1;4;https://www.gigamic.com/files/catalog/products/rules/gigamic_roulapik_rules_10-2018-web.pdf;207;4;4;0;20;4;Enfant;207;Lifestyle boardgames
+658;Mia London et l'affaire des 625 fripouilles;2;4;https://www.scorpionmasque.com/sites/scorpionmasque.com/files/ml_rules_fr_web.pdf;129;4;5;0;10;4;Enfant;129;Scorpion Masqué
+669;Château Logique;1;1;;164;4;3;0;0;4;Enfant;164;Smart Games
+670;Jour & Nuit;1;1;;164;4;2;0;0;4;Enfant;164;Smart Games
+671;Lapin & Magicien;1;1;;164;4;2;0;0;4;Enfant;164;Smart Games
+672;Loco Circus;1;1;;164;4;3;0;0;4;Enfant;164;Smart Games
+673;Code couleurs;1;1;;164;4;5;0;0;4;Enfant;164;Smart Games
+674;Il était une ferme;1;1;;164;4;5;0;0;4;Enfant;164;Smart Games
+675;Jungle Cache-cache;1;1;;164;4;7;0;0;4;Enfant;164;Smart Games
+676;Les poules ont la bougeotte;1;1;;164;4;4;0;0;4;Enfant;164;Smart Games
+677;L'Atlantide;1;1;;164;4;8;0;0;4;Enfant;164;Smart Games
+678;Gecko gourmand;1;1;;164;4;7;0;0;4;Enfant;164;Smart Games
+679;Barrière de Corail;1;1;;164;4;4;0;0;4;Enfant;164;Smart Games
+680;En quête de pépite;1;1;;164;4;5;0;0;4;Enfant;164;Smart Games
+681;Fox Terrier;1;1;;164;4;5;0;0;4;Enfant;164;Smart Games
+682;L'Odyssée des Grenouilles;0;0;;164;4;0;1;0;4;Enfant;164;Smart Games
+119;Codenames;2;8;http://iello.fr/regles/Codenames_rulebook_FR-web_2018.pdf;146;6;12;0;15;6;Familial+;146;Iello
+379;7 Wonders Armada;2;7;;162;6;10;0;60;6;Familial+;162;Repos Prod
+458;Chronicles of Crime;1;4;https://luckyduckgames.com/pdf/rulebooks/rulebook_coc_french.pdf;175;6;12;0;90;6;Familial+;175;Lucky Duck Games
+472;Conspiracy (Abyss Universe);2;4;https://studiobombyx.com/assets/Conspiracy_Rulebook_FR-2.pdf;139;6;8;0;30;6;Familial+;139;Bombyx
+474;Abyss;2;4;https://studiobombyx.com/assets/ABYSS_rulebook_FR.pdf;139;6;14;0;45;6;Familial+;139;Bombyx
+574;Boomerang Australia;2;4;;153;6;8;0;30;6;Familial+;153;Matagot
+587;Apocalypse au zoo de Carson City - Les extension d;2;4;https://www.jeux-opla.fr/wp-content/uploads/Apocalypse-au-Zoo-de-Carson-City-english-rules.pdf;116;6;12;0;15;6;Familial+;116;Jeux Opla
+594;Catalyst;2;4;https://boardgamegeek.com/filepage/170112/catalyst-english-rules;224;6;10;0;40;6;Familial+;224;DV Giochi
+606;Ceylan;2;4;https://funnyfox.fr/wp-content/uploads/sites/21/2019/05/CEYLAN_r%C3%A8gles.pdf;229;6;10;0;45;6;Familial+;229;Funny Fox
+623;Cowboy Bebop - Space Serenade;1;4;https://static-dpg.s3.eu-central-1.amazonaws.com/CBB-Rules--FR.pdf;201;6;14;0;60;6;Familial+;201;Don't Panic Games
+624;Above;2;4;https://drive.google.com/open?id=1vzDDlDbAd62zu1Dk70QTcKIHJEIimTvx;201;6;14;0;30;6;Familial+;201;Don't Panic Games
+633;Couleurs de Paris;2;4;http://www.supermeeple.com/wp-content/uploads/2015/02/CdP-Rules-FR_V2.pdf;136;6;10;0;60;6;Familial+;136;Super Meeple
+653;L'Aube des Tribus;2;4;https://www.gigamic.com/files/catalog/products/rules/regles_vf_aube_des_tribus-web.pdf;138;6;10;0;45;6;Familial+;138;Gigamic
+665;Keyforge;2;2;https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwj9hrW4wfznAhUFVhoKHShLDqsQFjABegQIBRAB&url=https%3A%2F%2Fgusandco.net%2Fwp-content%2Fuploads%2F2018%2F11%2Fkf01frd01_online_rules_reference_fr.pdf&usg=AOvVaw2vR2-TCXu2lMZiUMYL9268;178;6;14;0;60;6;Familial+;178;Fantasy Flight Games
+667;Villainous;2;6;;161;6;10;0;50;6;Familial+;161;Ravensburger
+689;01 test restrict delete;NULL;NULL;;100;12;0;0;0;12;01 insert2;100;Asmodee
