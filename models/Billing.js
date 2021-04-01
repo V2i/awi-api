@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 const moment = require('moment');
-const billingStatus = ['Faite', 'Pas faite', 'Réglée'];
 
 const billingSchema = new mongoose.Schema({
 
     billingStatus: {
         type: String,
         required: true,
-        enum: billingStatus,
         default: 'Pas faite'     
     },
 
@@ -28,22 +26,6 @@ const billingSchema = new mongoose.Schema({
     },
 
 });
-
-billingSchema.pre('updateOne', function(next) {
-    const docToUpdate = this.getUpdate()['$set'];
-    if (docToUpdate.billingStatus){
-        if (!billingStatus.includes(docToUpdate.trackingWorkflow)){
-            throw new Error("billingStatus not valid");
-        }
-    }
-    if (docToUpdate.billingSendDate){
-        docToUpdate.billingSendDate = moment(docToUpdate.trackingContact1);
-    }
-    if (docToUpdate.billingPaidDate){
-        docToUpdate.billingPaidDate = moment(docToUpdate.trackingContact2);
-    }
-    next();
-  });
 
 module.exports = mongoose.model('Billing', billingSchema);
 

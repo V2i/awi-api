@@ -5,6 +5,7 @@ const moment = require('moment');
 const Reservation = require('../models/Reservation');
 const Billing = require('../models/Billing');
 const user = require('../middlewares/user');
+const admin = require('../middlewares/admin');
 
 /* GET billings listing */
 router.get('/list', user, async (req, res) => {
@@ -20,7 +21,7 @@ router.get('/list', user, async (req, res) => {
 
 /* GET billings listing by festival id */
 router.get('/list/festival/:id', user, async (req, res) => {
-
+    
     try {
         const billings = await Reservation.find({reservationFestival: req.params.id}, {reservationBilling: 1})
             .populate('reservationBilling');

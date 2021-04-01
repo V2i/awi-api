@@ -22,7 +22,7 @@ const reservationSchema = new mongoose.Schema({
     reservationTracking: {
         type: mongoose.ObjectId,
         ref: 'Tracking',
-        required: true,
+        required: false,
     },
 
     reservationComment: {
@@ -38,7 +38,7 @@ const reservationSchema = new mongoose.Schema({
     reservationBilling: {
         type: mongoose.ObjectId,
         ref: 'Billing',
-        required: true,
+        required: false,
     },
 
     exhibitorVolunteerNeeded: {
