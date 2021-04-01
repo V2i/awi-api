@@ -46,7 +46,7 @@ router.post('/', admin, async (req, res) => {
     });
 
     try {
-        const savedReservedGame = await reservedGame.save()
+        const savedReservedGame = (await reservedGame.save())
             .populate('reservedGame')
             .populate('reservedGameZone');
         return res.status(200).json(savedReservedGame);

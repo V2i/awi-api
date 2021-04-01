@@ -41,7 +41,7 @@ router.post('/', admin, async (req, res) => {
     });
 
     try {
-        const savedReservedSpace = await reservedSpace.save()
+        const savedReservedSpace = (await reservedSpace.save())
             .populate('reservedSpace');
         return res.status(200).json(savedReservedSpace);
     } catch (err) {
