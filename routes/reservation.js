@@ -51,7 +51,7 @@ router.get('/:id', user, async (req, res) => {
         .populate({
             path:'reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling',
             populate: {
-                path: 'reservedGame reservedGameZone',
+                path: 'reservedGame reservedGameZone festivalSpace',
                 populate: {
                     path : 'gameEditor gameType'
                 }
