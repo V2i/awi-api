@@ -48,8 +48,16 @@ router.get('/:id', user, async (req, res) => {
 
     try {
         const reservation = await Reservation.findById(req.params.id)
-            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
-        return res.status(200).json(reservation);
+        .populate({
+            path:'reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling',
+            populate: {
+                path: 'reservedGame reservedGameZone',
+                populate: {
+                    path : 'gameEditor gameType'
+                }
+            }
+        });
+            return res.status(200).json(reservation);
     } catch (err) {
         return res.status(500).json({message: err});
     }
@@ -99,7 +107,16 @@ router.patch('/:id', admin, async (req, res) => {
     try{
         await Reservation.updateOne({_id: req.params.id}, {$set: {...req.body}})
         const updatedReservation = await Reservation.findById(req.params.id)
-            .populate('reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling');
+            .populate({
+                path:'reservationExhibitor reservationReservedSpace reservationFestival reservationTracking reservationReservedGame reservationBilling',
+                populate: {
+                    path: 'reservedGame reservedGameZone',
+                    populate: {
+                        path : 'gameEditor gameType'
+                    }
+                }
+            }
+                );
         return res.status(200).json(updatedReservation);
     } catch (err) {
         return res.status(500).json({message: err});
