@@ -33,7 +33,7 @@ router.get('/list/festival/:id', user, async (req, res) => {
             .populate({
                 path: 'reservationExhibitor reservationReservedSpace reservationTracking reservationReservedGame reservationBilling',
                 populate: {
-                    path: 'exhibitorEditor exhibitorContact reservedGame reservedSpace reservedGameZone',
+                    path: 'exhibitorEditor exhibitorContact reservedGame reservedSpace reservedGameZone festivalSpace',
                 }
             })
         return res.status(200).json(reservations);
